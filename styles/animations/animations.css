@@ -18,3 +18,110 @@
     background-position: 0% 50%;
   }
 }
+
+/**
+ * ----------------------------------------
+ * animation slide-tl
+ * ----------------------------------------
+ */
+
+ .slide-tl {
+	-webkit-animation: slide-tl 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-tl 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-tl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-15px) translateX(-15px);
+            transform: translateY(-15px) translateX(-15px);
+  }
+}
+@keyframes slide-tl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-15px) translateX(-15px);
+            transform: translateY(-15px) translateX(-15px);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+
+ .slide-top {
+  &:hover {
+    -webkit-animation: slide-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+}
+
+@-webkit-keyframes slide-top {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25%, 75% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25%, 75% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-tr
+ * ----------------------------------------
+ */
+
+ .slide-tr {
+	-webkit-animation: slide-tr 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-tr 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-tr {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-15px) translateX(15px);
+            transform: translateY(-15px) translateX(15px);
+  }
+}
+@keyframes slide-tr {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-15px) translateX(15px);
+            transform: translateY(-15px) translateX(15px);
+  }
+}

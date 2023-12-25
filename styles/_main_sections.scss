@@ -1,6 +1,6 @@
 //we have 5 main sections
 
-// FIRST SECTION --->
+// FIRST SECTION HERE --->
 .hero_offer {
   padding: 3.125rem 0 11.25rem;
   .offer {
@@ -75,9 +75,9 @@
   //   }
   // }
 }
-// FIRST SECTION <---
+// FIRST SECTION CLOSED <---
 
-// SECOND SECTION --->
+// SECOND SECTION HERE --->
 
 .second_section {
   padding: 5.625rem 3rem;
@@ -151,6 +151,10 @@
   }
 }
 
+// SECOND SECTION CLOSED <---
+
+// THIRD SECTION HERE --->
+
 .third_section {
   padding-bottom: 11.563rem;
   .top_side {
@@ -166,7 +170,6 @@
         color: $main-color;
         font-size: 2.25rem;
         font-weight: 400;
-        letter-spacing: 2.25rem;
         letter-spacing: 0.03rem;
         margin-top: 0.5rem;
       }
@@ -230,6 +233,60 @@
         );
         margin-bottom: 2rem;
       }
+    }
+  }
+}
+
+// THIRD SECTION CLOSED <---
+
+// FOURTH SECTION HERE --->
+
+.fourth_section {
+  padding: 5.938rem 4rem;
+  .gallery {
+    h2 {
+      @include main_text_template($main-color, 4rem, 400, 4rem, 0.03rem);
+      margin-bottom: 4.563rem;
+      text-align: center;
+    }
+    .cards {
+      margin-bottom: 4rem;
+      .card {
+        img {
+          margin-bottom: 1.813rem;
+        }
+        a {
+          @include main_text_template(
+            $main-color,
+            1.625rem,
+            700,
+            1.625rem,
+            0.03rem
+          );
+          margin-left: 1.813rem;
+        }
+        .left_anim {
+          &:hover {
+          }
+        }
+        .center_anim {
+          transform: translateY(0) translateX(0);
+          &:hover {
+            transform: translateY(15px) translateX(15px);
+          }
+        }
+        .right_anim {
+          &:hover {
+          }
+        }
+      }
+    }
+    .btn {
+      @include main_text_template(#fff, 0.875rem, 700, 1rem, 0.03rem);
+      text-align: center;
+      background-color: $main-color;
+      padding: 1rem 2rem;
+      width: 134px;
     }
   }
 }

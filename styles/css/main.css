@@ -39,6 +39,10 @@ a {
   align-items: center;
 }
 
+.grid {
+  display: grid;
+}
+
 .text-template, .second_section .main_text p, .hero_offer .offer p {
   color: #2f2f2f;
   font-size: 1.063rem;
@@ -196,7 +200,6 @@ a {
   color: #2f2f2f;
   font-size: 2.25rem;
   font-weight: 400;
-  letter-spacing: 2.25rem;
   letter-spacing: 0.03rem;
   margin-top: 0.5rem;
 }
@@ -233,7 +236,7 @@ a {
 .third_section .bottom_side .text span {
   color: #fff;
   font-size: 1rem;
-  font-weight: fw;
+  font-weight: 400;
   line-height: 1.125rem;
   letter-spacing: 0.03rem;
   background-color: #82cbac;
@@ -251,7 +254,7 @@ a {
 .third_section .bottom_side .text h2 {
   color: #2f2f2f;
   font-size: 2rem;
-  font-weight: fw;
+  font-weight: 700;
   line-height: 2rem;
   letter-spacing: 0.03rem;
   margin-bottom: 0.875rem;
@@ -259,8 +262,52 @@ a {
 .third_section .bottom_side .text p {
   color: #2f2f2f;
   font-size: 1.125rem;
-  font-weight: fw;
+  font-weight: 400;
   line-height: 1.625rem;
   letter-spacing: 0.03rem;
   margin-bottom: 2rem;
+}
+
+.fourth_section {
+  padding: 5.938rem 4rem;
+}
+.fourth_section .gallery h2 {
+  color: #2f2f2f;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0.03rem;
+  margin-bottom: 4.563rem;
+  text-align: center;
+}
+.fourth_section .gallery .cards {
+  margin-bottom: 4rem;
+}
+.fourth_section .gallery .cards .card img {
+  margin-bottom: 1.813rem;
+}
+.fourth_section .gallery .cards .card a {
+  color: #2f2f2f;
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+  letter-spacing: 0.03rem;
+  margin-left: 1.813rem;
+}
+.fourth_section .gallery .cards .card .center_anim {
+  transform: translateY(0) translateX(0);
+}
+.fourth_section .gallery .cards .card .center_anim:hover {
+  transform: translateY(15px) translateX(15px);
+}
+.fourth_section .gallery .btn {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.03rem;
+  text-align: center;
+  background-color: #2f2f2f;
+  padding: 1rem 2rem;
+  width: 134px;
 }
