@@ -266,27 +266,104 @@
           margin-left: 1.813rem;
         }
         .left_anim {
+          transform: translateY(0) translateX(0);
+          transition: all 0.2s linear;
           &:hover {
+            transform: translateY(-15px) translateX(-15px);
+            scale: 105%;
           }
         }
         .center_anim {
           transform: translateY(0) translateX(0);
+          transition: all 0.2s linear;
           &:hover {
-            transform: translateY(15px) translateX(15px);
+            transform: translateY(-10px) translateY(-10px);
+            scale: 105%;
           }
         }
         .right_anim {
+          transform: translateY(0) translateX(0);
+          transition: all 0.2s linear;
           &:hover {
+            transform: translateX(15px) translateY(-15px);
+            scale: 105%;
           }
         }
       }
     }
     .btn {
       @include main_text_template(#fff, 0.875rem, 700, 1rem, 0.03rem);
+      margin: 4rem auto 0;
       text-align: center;
       background-color: $main-color;
       padding: 1rem 2rem;
       width: 134px;
     }
+  }
+}
+
+// FOURTH SECTION SLOSED <---
+
+// FIFTH (last) SECTION HERE --->
+
+.last_section {
+  padding: 6rem 4rem;
+  h2 {
+    @include main_text_template($main-color, 4rem, 400, 4rem, 0.03rem);
+    text-align: center;
+    margin-bottom: 1.563rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 3fr 3fr;
+    .item {
+      margin: 0 auto;
+      .item-info {
+        padding: 1.5rem;
+        align-items: center;
+        .item-sub-text {
+          p {
+            @include main_text_template(
+              $main-color,
+              1rem,
+              400,
+              1.125rem,
+              0.03rem
+            );
+            margin-right: 0.5rem;
+          }
+          span {
+            @include main_text_template(
+              $main-color,
+              1.1rem,
+              700,
+              1.125rem,
+              0.03rem
+            );
+          }
+        }
+        .item-sub-icons {
+          .sub-icon-1 {
+            background-color: #a8c1d833;
+            padding: 0.625rem;
+            margin-right: 0.5rem;
+          }
+          .sub-icon-2 {
+            padding: 0.625rem 0.8rem;
+            background-color: $second-color;
+            border-radius: 1.875rem;
+          }
+        }
+      }
+    }
+  }
+  a {
+    @include main_text_template(#fff, 0.875rem, 700, 1rem, 0.03rem);
+    width: 135px;
+    margin: 3.75rem auto;
+    background-color: $main-color;
+    padding: 1rem 2rem;
+    border: none;
   }
 }
