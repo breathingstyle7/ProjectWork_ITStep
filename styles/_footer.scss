@@ -33,6 +33,10 @@ footer {
       a {
         @include main_text_template($main-color, 0.9rem, 400, 1rem, 0.03rem);
         margin-bottom: 0.5rem;
+        &:hover {
+          color: $liquid-color;
+          font-style: italic;
+        }
       }
     }
     .form_column {
@@ -106,6 +110,10 @@ footer {
         display: inline;
         margin: 0 0.1rem;
         padding: 0;
+        &:hover {
+          color: $liquid-color;
+          font-style: italic;
+        }
       }
       @include main_text_template($main-color, 0.875rem, 400, 1rem, 0.03rem);
     }

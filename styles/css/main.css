@@ -116,7 +116,7 @@ a {
   font-size: 0.813rem;
   font-weight: 400;
   line-height: 0.875rem;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.03;
 }
 .hero_offer .offer h1 {
   margin: 0 3.875rem 1.563rem 0;
@@ -169,23 +169,23 @@ a {
   color: #ff7f96;
   font-size: 1rem;
   font-weight: 400;
-  letter-spacing: 0.03rem;
-  margin-bottom: 0.688rem;
+  line-height: 0;
+  letter-spacing: 0.03;
 }
 .second_section .under_text_info .second_hero_container .aside_text h3 {
   color: #2f2f2f;
   font-size: 2.25rem;
   font-weight: 400;
-  letter-spacing: 0.03rem;
-  line-height: 1.8rem;
+  line-height: 1.8;
+  letter-spacing: 0.03;
   margin-bottom: 1.313rem;
 }
 .second_section .under_text_info .second_hero_container .aside_text p {
   color: #2f2f2f;
   font-size: 1.25rem;
   font-weight: 400;
-  line-height: 1.7rem; /* 130% */
-  letter-spacing: 0.03px;
+  line-height: 1.7rem;
+  letter-spacing: 0.03;
 }
 
 .third_section {
@@ -236,6 +236,7 @@ a {
   padding: 1rem 2.5rem;
   width: 40%;
   background-color: #2f2f2f;
+  border-radius: 0.4rem;
   transform: translateX(290px);
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -512,6 +513,10 @@ footer .main_footer .info_column a {
   letter-spacing: 0.03rem;
   margin-bottom: 0.5rem;
 }
+footer .main_footer .info_column a:hover {
+  color: #82cbac;
+  font-style: italic;
+}
 footer .main_footer .form_column {
   display: block;
   margin-bottom: 7.375rem;
@@ -587,4 +592,8 @@ footer .supp_footer h3 a {
   display: inline;
   margin: 0 0.1rem;
   padding: 0;
+}
+footer .supp_footer h3 a:hover {
+  color: #82cbac;
+  font-style: italic;
 }
