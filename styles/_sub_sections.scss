@@ -1,0 +1,24 @@
+.sub_section {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  .infinity_anim {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      50% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  }
+}
