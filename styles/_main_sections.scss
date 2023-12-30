@@ -16,65 +16,91 @@
       @extend .text-template;
     }
   }
-  // .hero {
-  //   position: relative;
-  //   .main_character {
-  //     position: absolute;
-  //     top: 100;
-  //     left: 200;
-  //     .main_character_image {
-  //       position: relative;
-  //       .supp_info {
-  //         position: absolute;
-  //         padding: 0.438rem 0.813rem 0.438rem 0.688rem;
-  //         border-radius: 30px;
-  //         background: rgba(255, 255, 255, 0.85);
-  //         box-shadow: 0px -4px 19px 0px rgba(0, 0, 0, 0.03);
-  //         .text {
-  //           p {
-  //             color: $main-color;
-  //             font-size: 1rem;
-  //             font-weight: 400;
-  //             line-height: 1rem;
-  //             letter-spacing: 0.03rem;
-  //           }
-  //           span {
-  //             color: $main-color;
-  //             font-size: 0.688rem;
-  //             font-weight: 400;
-  //             line-height: 1rem;
-  //             letter-spacing: 0.03rem;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // .second_character {
-  //   position: absolute;
-  //   bottom: 0;
-  //   right: 0;
-  //   .second_character_image {
-  //     position: relative;
-  //     .supp_info {
-  //       position: absolute;
-  //       padding: 0.438rem 0.813rem 0.438rem 0.688rem;
-  //       border-radius: 30px;
-  //       background: rgba(255, 255, 255, 0.85);
-  //       box-shadow: 0px -4px 19px 0px rgba(0, 0, 0, 0.03);
-  //       .text {
-  //         p {
-  //         }
-  //         span {
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  //   .second_character_wrapper{
-  //     .second_character_image{
-  //     }
-  //   }
-  // }
+  .hero {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    .main_character {
+      position: absolute;
+      top: 100px;
+      left: 169px;
+      z-index: 1;
+      .main_character_image {
+        position: relative;
+        .supp_info_main {
+          position: absolute;
+          padding: 0.438rem 0.813rem 0.438rem 0.688rem;
+          border-radius: 30px;
+          background: rgba(255, 255, 255, 0.85);
+          box-shadow: 0px -4px 19px 0px rgba(0, 0, 0, 0.03);
+          left: -100px;
+          bottom: 25px;
+          img {
+            margin-right: 0.75rem;
+          }
+          .text {
+            text-align: center;
+            p {
+              @include main_text_template(
+                $main-color,
+                1rem,
+                400,
+                1rem,
+                0.03rem
+              );
+            }
+            span {
+              @include main_text_template(
+                $main-color,
+                0.688rem,
+                400,
+                1rem,
+                0.03rem
+              );
+            }
+          }
+        }
+      }
+    }
+    .second_character {
+      position: absolute;
+      .second_character_image {
+        position: relative;
+        .supp_info {
+          position: absolute;
+          padding: 0.438rem 0.813rem 0.438rem 0.688rem;
+          border-radius: 30px;
+          background: rgba(255, 255, 255, 0.85);
+          box-shadow: 0px -4px 19px 0px rgba(0, 0, 0, 0.03);
+          left: -75px;
+          top: 22px;
+          img {
+            margin-right: 0.313rem;
+          }
+          .text {
+            p {
+              @include main_text_template(
+                $main-color,
+                0.688rem,
+                400,
+                0.688rem,
+                0.03rem
+              );
+            }
+            span {
+              @include main_text_template(
+                $main-color,
+                0.563rem,
+                400,
+                0.688rem,
+                0.03rem
+              );
+            }
+          }
+        }
+      }
+    }
+  }
 }
 // FIRST SECTION CLOSED <---
 

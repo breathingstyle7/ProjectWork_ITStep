@@ -121,6 +121,82 @@ a {
 .hero_offer .offer h1 {
   margin: 0 3.875rem 1.563rem 0;
 }
+.hero_offer .hero {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+.hero_offer .hero .main_character {
+  position: absolute;
+  top: 100px;
+  left: 169px;
+  z-index: 1;
+}
+.hero_offer .hero .main_character .main_character_image {
+  position: relative;
+}
+.hero_offer .hero .main_character .main_character_image .supp_info_main {
+  position: absolute;
+  padding: 0.438rem 0.813rem 0.438rem 0.688rem;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px -4px 19px 0px rgba(0, 0, 0, 0.03);
+  left: -100px;
+  bottom: 25px;
+}
+.hero_offer .hero .main_character .main_character_image .supp_info_main img {
+  margin-right: 0.75rem;
+}
+.hero_offer .hero .main_character .main_character_image .supp_info_main .text {
+  text-align: center;
+}
+.hero_offer .hero .main_character .main_character_image .supp_info_main .text p {
+  color: #2f2f2f;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.03rem;
+}
+.hero_offer .hero .main_character .main_character_image .supp_info_main .text span {
+  color: #2f2f2f;
+  font-size: 0.688rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.03rem;
+}
+.hero_offer .hero .second_character {
+  position: absolute;
+}
+.hero_offer .hero .second_character .second_character_image {
+  position: relative;
+}
+.hero_offer .hero .second_character .second_character_image .supp_info {
+  position: absolute;
+  padding: 0.438rem 0.813rem 0.438rem 0.688rem;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px -4px 19px 0px rgba(0, 0, 0, 0.03);
+  left: -75px;
+  top: 22px;
+}
+.hero_offer .hero .second_character .second_character_image .supp_info img {
+  margin-right: 0.313rem;
+}
+.hero_offer .hero .second_character .second_character_image .supp_info .text p {
+  color: #2f2f2f;
+  font-size: 0.688rem;
+  font-weight: 400;
+  line-height: 0.688rem;
+  letter-spacing: 0.03rem;
+}
+.hero_offer .hero .second_character .second_character_image .supp_info .text span {
+  color: #2f2f2f;
+  font-size: 0.563rem;
+  font-weight: 400;
+  line-height: 0.688rem;
+  letter-spacing: 0.03rem;
+}
+
 .second_section {
   padding: 5.625rem 3rem;
 }
