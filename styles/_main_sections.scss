@@ -39,7 +39,7 @@
             margin-right: 0.75rem;
           }
           .text {
-            text-align: center;
+            margin: auto auto;
             p {
               @include main_text_template(
                 $main-color,
@@ -78,6 +78,7 @@
             margin-right: 0.313rem;
           }
           .text {
+            margin: auto auto;
             p {
               @include main_text_template(
                 $main-color,
