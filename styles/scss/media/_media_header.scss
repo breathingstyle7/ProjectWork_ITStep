@@ -1,0 +1,27 @@
+@include desktop() {
+  .header {
+    img {
+    }
+  }
+}
+
+@include laptop() {
+  .header {
+    img {
+    }
+  }
+}
+
+@include tablet() {
+  .header {
+    img {
+    }
+  }
+}
+
+@include mobile() {
+  .header {
+    img {
+    }
+  }
+}

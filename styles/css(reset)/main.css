@@ -20,7 +20,7 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 1130px;
   margin: 0 auto;
 }
 
@@ -75,7 +75,7 @@ a {
 }
 .header .navbar {
   width: 16.063rem;
-  margin-right: 28.5rem;
+  margin-right: 23.5rem;
 }
 .header .navbar ul li a {
   color: #2f2f2f;
@@ -363,7 +363,7 @@ a {
 }
 
 .fourth_section {
-  padding: 5.938rem 4rem;
+  margin: 5.938rem auto;
 }
 .fourth_section .gallery h2 {
   color: #2f2f2f;
@@ -379,6 +379,8 @@ a {
 }
 .fourth_section .gallery .cards .card img {
   margin-bottom: 1.813rem;
+  object-fit: contain;
+  width: 330px;
 }
 .fourth_section .gallery .cards .card a {
   color: #2f2f2f;
@@ -432,7 +434,7 @@ a {
 }
 
 .last_section {
-  padding: 6rem 4rem;
+  margin: 6rem auto;
   align-items: center;
 }
 .last_section h2 {
@@ -446,11 +448,17 @@ a {
 }
 .last_section .grid {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto;
+  width: 1100px;
+  margin: 0.5rem auto;
 }
 .last_section .grid .item {
   margin: 0 auto;
+}
+.last_section .grid .item .main-grid-image {
+  width: 300px;
+  object-fit: contain;
 }
 .last_section .grid .item .item-info {
   padding: 1.5rem;
@@ -529,7 +537,6 @@ a {
 }
 
 .first_sub__section {
-  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -558,7 +565,7 @@ a {
   background-color: #82cbac;
   padding: 4.438rem 0 5rem 7.5rem;
 }
-.second_sub__section .container h2 {
+.second_sub__section h2 {
   color: #2f2f2f;
   font-size: 4rem;
   font-weight: 400;
@@ -566,7 +573,7 @@ a {
   letter-spacing: 0.03rem;
   margin-bottom: 2rem;
 }
-.second_sub__section .container p {
+.second_sub__section p {
   color: #2f2f2f;
   font-size: 1.25rem;
   font-weight: 400;
@@ -574,7 +581,7 @@ a {
   letter-spacing: 0.03rem;
   margin-bottom: 3rem;
 }
-.second_sub__section .container a {
+.second_sub__section a {
   color: #fff;
   font-size: 1rem;
   font-weight: 400;
@@ -585,7 +592,7 @@ a {
   padding: 1rem 2.5rem;
   transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.second_sub__section .container a:hover {
+.second_sub__section a:hover {
   font-size: 1.15rem;
   border-radius: 1.5rem;
 }

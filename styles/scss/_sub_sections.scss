@@ -1,5 +1,4 @@
 .first_sub__section {
-  width: 100%;
   overflow: hidden;
   position: relative;
   .infinity_anim {
@@ -24,9 +23,9 @@
 }
 
 .second_sub__section {
-  width: 100vw;
+  width: 100%;
   background-color: $liquid-color;
-  padding: 4.438rem 0 5rem 7.5rem;
+  padding: 4.438rem 6rem;
   .container {
     h2 {
       @include main_text_template($main-color, 4rem, 400, 4rem, 0.03rem);

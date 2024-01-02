@@ -1,0 +1,23 @@
+@mixin desktop() {
+  @media screen and (max-width: $breakpoint_xxl) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media screen and (max-width: $breakpoint_xl) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media screen and (max-width: $breakpoint_md) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media screen and (max-width: $breakpoint_sm) {
+    @content;
+  }
+}
