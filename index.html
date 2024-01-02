@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodX</title>
-    <link rel="stylesheet" href="/styles/css/main.css" />
+    <link rel="stylesheet" href="/styles/scss/css/main.css" />
+    <link rel="stylesheet" href="/styles/scss/media/css/media_main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -32,6 +33,25 @@
         <div class="header_btn">
           <a href="">View on OpenSea</a>
         </div>
+      </div>
+      <div class="humburger">
+        <button
+          class="menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu"
+        >
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
       </div>
     </header>
     <main class="main_sections">
@@ -131,9 +151,7 @@
         </div>
       </div>
       <section class="second_section container flex direction-column">
-        <div
-          class="main_text container wow animate__animated animate__fadeInRight"
-        >
+        <div class="main_text wow animate__animated animate__fadeInRight">
           <h2>Hey there, we are</h2>
           <p>
             Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec
@@ -156,7 +174,7 @@
             />
             <div class="aside_text wow animate__animated animate__fadeInLeft">
               <span>Digital Artist</span>
-              <h3>Pellentesque blandit<span></span>in quam rhoncus</h3>
+              <h3>Pellentesque blandit<span></span> in quam rhoncus</h3>
               <p>
                 Suspendisse ante mauris, volutpat congue sem ac, ultrices tempor
                 lorem. Nullam eget vehicula tellus, ac consectetur urna. Mauris
@@ -268,10 +286,13 @@
         </div>
       </section>
       <section class="last_section">
-        <h2 class="wow animate__animated animate__fadeInDown">Top NFT</h2>
+        <h2 class="wow animate__animated animate__fadeInDown container">
+          Top NFT
+        </h2>
         <div class="grid container wow animate__animated animate__fadeInUp">
           <div class="item item-1">
             <img
+              class="main-grid-image"
               src="img/main/last_section/grid_images/first_grid_img.png"
               alt="#404"
             />
@@ -299,6 +320,7 @@
           </div>
           <div class="item item-2">
             <img
+              class="main-grid-image"
               src="img/main/last_section/grid_images/second_grid_img.png"
               alt=""
             />
@@ -326,6 +348,7 @@
           </div>
           <div class="item item-3">
             <img
+              class="main-grid-image"
               src="img/main/last_section/grid_images/third_grid_img.png"
               alt=""
             />
@@ -353,6 +376,7 @@
           </div>
           <div class="item item-4">
             <img
+              class="main-grid-image"
               src="img/main/last_section/grid_images/fourth_grid_img.png"
               alt=""
             />
@@ -380,6 +404,7 @@
           </div>
           <div class="item item-5">
             <img
+              class="main-grid-image"
               src="img/main/last_section/grid_images/fifth_grid_img.png"
               alt=""
             />
@@ -407,6 +432,7 @@
           </div>
           <div class="item item-6">
             <img
+              class="main-grid-image"
               src="img/main/last_section/grid_images/sixth_grid_img.png"
               alt=""
             />
@@ -433,9 +459,11 @@
             </div>
           </div>
         </div>
-        <a class="wow animate__animated animate__fadeInDown" href=""
-          >View All</a
-        >
+        <div class="container">
+          <a class="wow animate__animated animate__fadeInDown" href=""
+            >View All</a
+          >
+        </div>
         <table class="container">
           <caption>
             FAQ

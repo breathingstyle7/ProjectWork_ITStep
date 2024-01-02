@@ -1,0 +1,446 @@
+//we have 5 main sections
+
+// FIRST SECTION HERE --->
+.hero_offer {
+  padding: 3.125rem 0 11.25rem;
+  .offer {
+    margin: 12.375rem 0 19.375rem;
+    span {
+      @include main_text_template($liquid-color, 0.813rem, 400, 0.875rem, 0.03);
+    }
+    h1 {
+      @extend .title-template;
+      margin: 0 3.875rem 1.563rem 0;
+    }
+    p {
+      @extend .text-template;
+    }
+  }
+  .hero {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    .main_character {
+      position: absolute;
+      top: 100px;
+      left: 169px;
+      z-index: 1;
+      .main_character_image {
+        position: relative;
+        .supp_info_main {
+          position: absolute;
+          padding: 0.438rem 0.813rem 0.438rem 0.688rem;
+          border-radius: 30px;
+          background: rgba(255, 255, 255, 0.85);
+          box-shadow: 0px -4px 19px 0px rgba(0, 0, 0, 0.03);
+          left: -100px;
+          bottom: 25px;
+          img {
+            margin-right: 0.75rem;
+          }
+          .text {
+            margin: auto auto;
+            p {
+              @include main_text_template(
+                $main-color,
+                1rem,
+                400,
+                1rem,
+                0.03rem
+              );
+            }
+            span {
+              @include main_text_template(
+                $main-color,
+                0.688rem,
+                400,
+                1rem,
+                0.03rem
+              );
+            }
+          }
+        }
+      }
+    }
+    .second_character {
+      position: absolute;
+      .second_character_image {
+        position: relative;
+        .supp_info {
+          position: absolute;
+          padding: 0.438rem 0.813rem 0.438rem 0.688rem;
+          border-radius: 30px;
+          background: rgba(255, 255, 255, 0.85);
+          box-shadow: 0px -4px 19px 0px rgba(0, 0, 0, 0.03);
+          left: -75px;
+          top: 22px;
+          img {
+            margin-right: 0.313rem;
+          }
+          .text {
+            margin: auto auto;
+            p {
+              @include main_text_template(
+                $main-color,
+                0.688rem,
+                400,
+                0.688rem,
+                0.03rem
+              );
+            }
+            span {
+              @include main_text_template(
+                $main-color,
+                0.563rem,
+                400,
+                0.688rem,
+                0.03rem
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// FIRST SECTION CLOSED <---
+
+// SECOND SECTION HERE --->
+
+.second_section {
+  padding: 5.625rem 3rem;
+  .main_text {
+    h2 {
+      @extend .title-template;
+      margin-bottom: 1.563rem;
+      text-align: center;
+    }
+    p {
+      @extend .text-template;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  }
+  .under_text_info {
+    padding: 2.5rem 0;
+    transition: opacity 1s ease;
+    .buttons {
+      width: 50%;
+      a {
+        width: 32%;
+        padding: 0.875rem 3.063rem;
+        border: 1px solid $main-color;
+        border-radius: 1.875rem;
+        font-size: 1.375rem;
+        text-align: center;
+        color: $main-color;
+        transition: background-color 1s ease, color 0.6s ease,
+          border-radius 1s ease, border 0.9s ease;
+        &:hover {
+          background-color: $main-color;
+          color: #fff;
+          border: none;
+          border-radius: 1.25rem;
+        }
+      }
+    }
+    .second_hero_container {
+      padding-top: 4rem;
+      img {
+        width: auto;
+      }
+      .aside_text {
+        width: 49%;
+        padding: 2.938rem 1rem 1rem 0;
+        span {
+          @include main_text_template($second-color, 1rem, 400, 0rem, 0.03rem);
+          margin-bottom: 0.875rem;
+        }
+        h3 {
+          @include main_text_template(
+            $main-color,
+            2.25rem,
+            400,
+            1.8rem,
+            0.03rem
+          );
+          margin-bottom: 1.313rem;
+        }
+        p {
+          @include main_text_template(
+            $main-color,
+            1.25rem,
+            400,
+            1.7rem,
+            0.03rem
+          );
+        }
+      }
+    }
+  }
+}
+
+// SECOND SECTION CLOSED <---
+
+// THIRD SECTION HERE --->
+
+.third_section {
+  padding-bottom: 11.563rem;
+  .top_side {
+    margin-bottom: 5.25rem;
+    img {
+      width: auto;
+    }
+    .text {
+      width: 48%;
+      padding: 3.563rem 0.625rem 0 3rem;
+      span {
+        @include main_text_template($main-color, 2.25rem, 400, 2.6rem, 0.03rem);
+        text-transform: uppercase;
+        margin-top: 0.5rem;
+      }
+      h2 {
+        @include main_text_template($main-color, 3rem, 400, 3rem, 0.03rem);
+        margin-bottom: 2.375rem;
+      }
+      p {
+        @include main_text_template(
+          $main-color,
+          1.125rem,
+          400,
+          1.625rem,
+          0.03rem
+        );
+        margin-bottom: 2rem;
+      }
+      a {
+        @include main_text_template(#fff, 1rem, 700, 1rem, 0.03rem);
+        text-align: center;
+        padding: 1rem 2.5rem;
+        width: 40%;
+        background-color: $main-color;
+        border-radius: 0.4rem;
+        transform: translateX(290px);
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover {
+          width: 36%;
+          border-radius: 2.2rem;
+        }
+      }
+    }
+  }
+  .bottom_side {
+    .text {
+      width: 48%;
+      padding: 4rem 5.625rem 3.75rem 3.75rem;
+      span {
+        @include main_text_template(#fff, 1rem, 400, 1.125rem, 0.03rem);
+        background-color: $liquid-color;
+        border-radius: 1.875rem;
+        padding: 0.5rem 1.25rem;
+        width: 3.75rem;
+        margin-bottom: 0.375rem;
+        &:nth-of-type(2) {
+          background-color: $second-color;
+        }
+        &:nth-of-type(3) {
+          background-color: $second-liquid-color;
+        }
+      }
+      h2 {
+        @include main_text_template($main-color, 2rem, 700, 2rem, 0.03rem);
+        margin-bottom: 0.875rem;
+      }
+      p {
+        @include main_text_template(
+          $main-color,
+          1.125rem,
+          400,
+          1.625rem,
+          0.03rem
+        );
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+// THIRD SECTION CLOSED <---
+
+// FOURTH SECTION HERE --->
+
+.fourth_section {
+  margin: 5.938rem auto;
+  .gallery {
+    h2 {
+      @include main_text_template($main-color, 4rem, 400, 4rem, 0.03rem);
+      margin-bottom: 4.563rem;
+      text-align: center;
+    }
+    .cards {
+      margin-bottom: 4rem;
+      .card {
+        img {
+          margin-bottom: 1.813rem;
+          object-fit: contain;
+          width: 330px;
+        }
+        a {
+          @include main_text_template(
+            $main-color,
+            1.625rem,
+            700,
+            1.625rem,
+            0.03rem
+          );
+          margin-left: 1.813rem;
+        }
+        .left_anim {
+          transform: translateY(0) translateX(0);
+          transition: all 0.2s linear;
+          &:hover {
+            transform: translateY(-15px) translateX(-15px);
+            scale: 105%;
+          }
+        }
+        .center_anim {
+          transform: translateY(0) translateX(0);
+          transition: all 0.2s linear;
+          &:hover {
+            transform: translateY(-10px) translateY(-10px);
+            scale: 105%;
+          }
+        }
+        .right_anim {
+          transform: translateY(0) translateX(0);
+          transition: all 0.2s linear;
+          &:hover {
+            transform: translateX(15px) translateY(-15px);
+            scale: 105%;
+          }
+        }
+      }
+    }
+    .btn {
+      @include main_text_template(#fff, 0.875rem, 700, 1rem, 0.03rem);
+      text-align: center;
+      width: 12%;
+      margin: 3.75rem auto;
+      background-color: $main-color;
+      padding: 1rem 2rem;
+      border-radius: 0.3rem;
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      &:hover {
+        width: 10%;
+        border-radius: 2.2rem;
+      }
+    }
+  }
+}
+
+// FOURTH SECTION SLOSED <---
+
+// FIFTH (last) SECTION HERE --->
+
+.last_section {
+  margin: 6rem auto;
+  align-items: center;
+  h2 {
+    @include main_text_template($main-color, 4rem, 400, 4rem, 0.03rem);
+    text-align: center;
+    margin-bottom: 1.563rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    width: 1100px;
+    margin: 0.5rem auto;
+    .item {
+      margin: 0 auto;
+      .main-grid-image {
+        width: 300px;
+        object-fit: contain;
+      }
+      .item-info {
+        padding: 1.5rem;
+        align-items: center;
+        .item-sub-text {
+          p {
+            @include main_text_template(
+              $main-color,
+              1rem,
+              400,
+              1.125rem,
+              0.03rem
+            );
+            margin-right: 0.5rem;
+          }
+          span {
+            @include main_text_template(
+              $main-color,
+              1.1rem,
+              700,
+              1.125rem,
+              0.03rem
+            );
+          }
+        }
+        .item-sub-icons {
+          .sub-icon-1 {
+            background-color: #a8c1d833;
+            padding: 0.625rem;
+            margin-right: 0.5rem;
+          }
+          .sub-icon-2 {
+            padding: 0.625rem 0.8rem;
+            background-color: $second-color;
+            border-radius: 1.875rem;
+          }
+        }
+      }
+    }
+  }
+  a {
+    @include main_text_template(#fff, 0.875rem, 700, 1rem, 0.03rem);
+    text-align: center;
+    width: 12%;
+    margin: 3.75rem auto;
+    background-color: $main-color;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover {
+      width: 10%;
+      border-radius: 2.2rem;
+    }
+  }
+  table {
+    width: 1070px;
+    margin: 0 auto;
+    caption {
+      @include main_text_template($main-color, 4rem, 400, 4rem, 0.03rem);
+      text-align: left;
+      margin-bottom: 3.125rem;
+    }
+    tr {
+      td {
+        @include main_text_template(
+          $main-color,
+          1.375rem,
+          400,
+          1.5rem,
+          0.03rem
+        );
+        padding: 1.625rem;
+        img {
+          transform: none;
+          transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+          &:hover {
+            transform: rotateX(-180deg);
+          }
+        }
+      }
+    }
+  }
+}
