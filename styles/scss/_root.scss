@@ -39,22 +39,6 @@ a {
   align-items: center;
 }
 
-.text-template {
-  color: $main-color;
-  font-size: 1.063rem;
-  font-weight: 400;
-  line-height: 1.625rem;
-  letter-spacing: 0.03rem;
-}
-
-.title-template {
-  color: $main-color;
-  font-size: 4rem;
-  font-weight: 400;
-  line-height: 4rem;
-  letter-spacing: 0.03rem;
-}
-
 @mixin main_text_template($main-color, $fz, $fw, $lh, $ls) {
   color: $main-color;
   font-size: $fz;
