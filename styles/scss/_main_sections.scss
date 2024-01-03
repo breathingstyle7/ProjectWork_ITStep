@@ -24,7 +24,7 @@
   }
   .hero {
     position: relative;
-    width: 600px;
+    width: 560px;
     height: 600px;
     .main_character {
       position: absolute;
@@ -117,12 +117,18 @@
   padding: 5.625rem 3rem;
   .main_text {
     h2 {
-      @include main_text_template($main-color);
+      @include main_text_template($main-color, 4rem, 400, 4rem, 0.03rem);
       margin-bottom: 1.563rem;
       text-align: center;
     }
     p {
-      @extend .text-template;
+      @include main_text_template(
+        $main-color,
+        1.063rem,
+        400,
+        1.625rem,
+        0.03rem
+      );
       margin-bottom: 2rem;
       text-align: center;
     }

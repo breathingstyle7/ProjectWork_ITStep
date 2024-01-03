@@ -19,6 +19,9 @@
   .container {
     width: 760px;
   }
+  .header {
+    margin: 1.063rem auto 1.8rem;
+  }
   .header .navbar {
     width: 12rem;
     margin-right: 14rem;
@@ -37,6 +40,7 @@
     width: 520px;
   }
   .header {
+    margin: 1.063rem auto 1.4rem;
     display: flex;
     justify-content: space-between;
   }
@@ -78,19 +82,300 @@
   .container {
     width: 960px;
   }
+  .hero_offer .offer h1 {
+    color: #2f2f2f;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    letter-spacing: 0.03rem;
+    margin: 0 4rem 1rem 0;
+  }
+  .hero_offer .hero {
+    width: auto;
+  }
+  .hero_offer .hero .main_character {
+    left: 129px;
+  }
+  .hero_offer .hero .main_character .main_character_image .main_char {
+    width: 320px;
+    object-fit: contain;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main {
+    padding: 0.438rem 0.875rem 0.438rem 0.688rem;
+    left: -85px;
+    bottom: 25px;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main img {
+    width: 34px;
+    object-fit: contain;
+    margin-right: 0.5rem;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main .text p {
+    color: #2f2f2f;
+    font-size: 0.925rem;
+    font-weight: 400;
+    line-height: 0.925rem;
+    letter-spacing: 0.03rem;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main .text span {
+    color: #2f2f2f;
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+    letter-spacing: 0.03rem;
+  }
+  .hero_offer .hero .second_character .second_character_image .second_char {
+    width: 265px;
+    object-fit: contain;
+  }
+  .hero_offer .hero .second_character .second_character_image .supp_info {
+    left: -55px;
+    padding: 0.438rem 0.313rem 0.438rem 0.688rem;
+  }
 }
 @media screen and (max-width: 992px) {
   .container {
     width: 760px;
+  }
+  .hero_offer {
+    flex-direction: column;
+    padding: 1.125rem 0 4.25rem;
+  }
+  .hero_offer .offer {
+    margin: 1.375rem 0 4rem;
+  }
+  .hero_offer .offer span {
+    color: #82cbac;
+    font-size: 0.713rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+    letter-spacing: 0rem;
+    margin-left: -3.75rem;
+  }
+  .hero_offer .offer h1 {
+    color: #2f2f2f;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    letter-spacing: 0.03rem;
+    margin: 0 4rem 1rem -1.875rem;
+  }
+  .hero_offer .offer p {
+    color: #2f2f2f;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0.03rem;
+    margin-left: 0.625rem;
+  }
+  .hero_offer .hero {
+    width: 520px;
+    height: 360px;
+  }
+  .hero_offer .hero .main_character {
+    left: 230px;
+    top: 60px;
+  }
+  .hero_offer .hero .main_character .main_character_image .main_char {
+    width: 280px;
+    object-fit: contain;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main {
+    left: -85px;
+    bottom: 10px;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main .text p {
+    color: #2f2f2f;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 0.925rem;
+    letter-spacing: 0.03rem;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main .text span {
+    color: #2f2f2f;
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+    letter-spacing: 0.03rem;
+  }
+  .hero_offer .hero .second_character {
+    left: 50px;
+  }
+  .hero_offer .hero .second_character .second_character_image .second_char {
+    width: 225px;
+    object-fit: contain;
+  }
+  .hero_offer .hero .second_character .second_character_image .supp_info {
+    top: 15px;
+    left: -55px;
+    padding: 0.438rem 0.583rem 0.438rem 0.688rem;
   }
 }
 @media screen and (max-width: 768px) {
   .container {
     width: 520px;
   }
+  .hero_offer {
+    flex-direction: column;
+    padding: 1.125rem 0 4.25rem;
+  }
+  .hero_offer .offer {
+    margin: 0.875rem 0 3rem;
+  }
+  .hero_offer .offer span {
+    color: #82cbac;
+    font-size: 0.713rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+    letter-spacing: 0rem;
+    margin-left: 1rem;
+  }
+  .hero_offer .offer h1 {
+    color: #2f2f2f;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    letter-spacing: 0.03rem;
+    margin: 0 4rem 1rem 2rem;
+  }
+  .hero_offer .offer p {
+    color: #2f2f2f;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0.03rem;
+    margin-left: 2.3rem;
+  }
+  .hero_offer .hero {
+    width: 520px;
+    height: 360px;
+  }
+  .hero_offer .hero .main_character {
+    left: 210px;
+    top: 45px;
+  }
+  .hero_offer .hero .main_character .main_character_image .main_char {
+    width: 260px;
+    object-fit: contain;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main {
+    padding: 0.438rem 0.875rem 0.438rem 0.688rem;
+    left: -85px;
+    bottom: 10px;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main img {
+    width: 34px;
+    object-fit: contain;
+    margin-right: 0.5rem;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main .text p {
+    color: #2f2f2f;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 0.925rem;
+    letter-spacing: 0.03rem;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main .text span {
+    color: #2f2f2f;
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+    letter-spacing: 0.03rem;
+  }
+  .hero_offer .hero .second_character {
+    left: 80px;
+  }
+  .hero_offer .hero .second_character .second_character_image .second_char {
+    width: 205px;
+    object-fit: contain;
+  }
+  .hero_offer .hero .second_character .second_character_image .supp_info {
+    top: 15px;
+    left: -55px;
+    padding: 0.438rem 0.583rem 0.438rem 0.688rem;
+  }
 }
 @media screen and (max-width: 576px) {
   .container {
     width: 420px;
+  }
+  .hero_offer {
+    flex-direction: column;
+    padding: 0.6rem 0 4.25rem;
+  }
+  .hero_offer .offer {
+    margin: 0.875rem 0 3rem;
+  }
+  .hero_offer .offer span {
+    color: #82cbac;
+    font-size: 0.613rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+    letter-spacing: 0rem;
+    margin-left: 2rem;
+  }
+  .hero_offer .offer h1 {
+    color: #2f2f2f;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.03rem;
+    margin: 0 4rem 0.4rem 3rem;
+  }
+  .hero_offer .offer p {
+    color: #2f2f2f;
+    font-size: 0.675rem;
+    font-weight: 400;
+    line-height: 0.675rem;
+    letter-spacing: 0.03rem;
+    margin-left: 3.1rem;
+  }
+  .hero_offer .hero {
+    width: 520px;
+    height: 360px;
+  }
+  .hero_offer .hero .main_character {
+    left: 160px;
+    top: 120px;
+  }
+  .hero_offer .hero .main_character .main_character_image .main_char {
+    width: 220px;
+    object-fit: contain;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main {
+    padding: 0.438rem 0.875rem 0.438rem 0.688rem;
+    left: -65px;
+    bottom: 10px;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main img {
+    width: 34px;
+    object-fit: contain;
+    margin-right: 0.5rem;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main .text p {
+    color: #2f2f2f;
+    font-size: 0.775rem;
+    font-weight: 400;
+    line-height: 0.775rem;
+    letter-spacing: 0.03rem;
+  }
+  .hero_offer .hero .main_character .main_character_image .supp_info_main .text span {
+    color: #2f2f2f;
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+    letter-spacing: 0.03rem;
+  }
+  .hero_offer .hero .second_character {
+    left: 180px;
+  }
+  .hero_offer .hero .second_character .second_character_image .second_char {
+    width: 180px;
+    object-fit: contain;
+  }
+  .hero_offer .hero .second_character .second_character_image .supp_info {
+    top: 15px;
+    left: -55px;
+    padding: 0.438rem 0.583rem 0.438rem 0.688rem;
   }
 }

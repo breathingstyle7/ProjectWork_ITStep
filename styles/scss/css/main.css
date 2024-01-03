@@ -40,22 +40,6 @@ a {
   align-items: center;
 }
 
-.text-template, .second_section .main_text p, .hero_offer .offer p {
-  color: #2f2f2f;
-  font-size: 1.063rem;
-  font-weight: 400;
-  line-height: 1.625rem;
-  letter-spacing: 0.03rem;
-}
-
-.title-template, .second_section .main_text h2, .hero_offer .offer h1 {
-  color: #2f2f2f;
-  font-size: 3.6rem;
-  font-weight: 400;
-  line-height: 3.6rem;
-  letter-spacing: 0.03rem;
-}
-
 .header {
   margin: 1.063rem auto 3.938rem;
   padding: 1.188rem 1.75rem;
@@ -151,11 +135,23 @@ a {
   letter-spacing: 0rem;
 }
 .hero_offer .offer h1 {
+  color: #2f2f2f;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0.03rem;
   margin: 0 2rem 1.563rem 0;
+}
+.hero_offer .offer p {
+  color: #2f2f2f;
+  font-size: 1.063rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0.03rem;
 }
 .hero_offer .hero {
   position: relative;
-  width: 600px;
+  width: 560px;
   height: 600px;
 }
 .hero_offer .hero .main_character {
@@ -236,10 +232,20 @@ a {
   padding: 5.625rem 3rem;
 }
 .second_section .main_text h2 {
+  color: #2f2f2f;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0.03rem;
   margin-bottom: 1.563rem;
   text-align: center;
 }
 .second_section .main_text p {
+  color: #2f2f2f;
+  font-size: 1.063rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0.03rem;
   margin-bottom: 2rem;
   text-align: center;
 }

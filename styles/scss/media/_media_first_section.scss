@@ -2,11 +2,156 @@
   .container {
     width: 960px;
   }
+  .hero_offer {
+    .offer {
+      h1 {
+        @include main_text_template($main-color, 3.2rem, 400, 3.5rem, 0.03rem);
+        margin: 0 4rem 1rem 0;
+      }
+    }
+    .hero {
+      width: auto;
+      .main_character {
+        left: 129px;
+        .main_character_image {
+          .main_char {
+            width: 320px;
+            object-fit: contain;
+          }
+          .supp_info_main {
+            padding: 0.438rem 0.875rem 0.438rem 0.688rem;
+            left: -85px;
+            bottom: 25px;
+            img {
+              width: 34px;
+              object-fit: contain;
+              margin-right: 0.5rem;
+            }
+            .text {
+              p {
+                @include main_text_template(
+                  $main-color,
+                  0.925rem,
+                  400,
+                  0.925rem,
+                  0.03rem
+                );
+              }
+              span {
+                @include main_text_template(
+                  $main-color,
+                  0.625rem,
+                  400,
+                  0.875rem,
+                  0.03rem
+                );
+              }
+            }
+          }
+        }
+      }
+      .second_character {
+        .second_character_image {
+          .second_char {
+            width: 265px;
+            object-fit: contain;
+          }
+          .supp_info {
+            left: -55px;
+            padding: 0.438rem 0.313rem 0.438rem 0.688rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include laptop() {
   .container {
     width: 760px;
+  }
+  .hero_offer {
+    flex-direction: column;
+    padding: 1.125rem 0 4.25rem;
+    .offer {
+      margin: 1.375rem 0 4rem;
+      span {
+        @include main_text_template(
+          $liquid-color,
+          0.713rem,
+          400,
+          0.875rem,
+          0rem
+        );
+        margin-left: -3.75rem;
+      }
+      h1 {
+        @include main_text_template($main-color, 2.8rem, 400, 2.8rem, 0.03rem);
+        margin: 0 4rem 1rem -1.875rem;
+      }
+      p {
+        @include main_text_template(
+          $main-color,
+          0.875rem,
+          400,
+          1.2rem,
+          0.03rem
+        );
+        margin-left: 0.625rem;
+      }
+    }
+    .hero {
+      width: 520px;
+      height: 360px;
+      .main_character {
+        left: 230px;
+        top: 60px;
+        .main_character_image {
+          .main_char {
+            width: 280px;
+            object-fit: contain;
+          }
+          .supp_info_main {
+            left: -85px;
+            bottom: 10px;
+            .text {
+              p {
+                @include main_text_template(
+                  $main-color,
+                  0.875rem,
+                  400,
+                  0.925rem,
+                  0.03rem
+                );
+              }
+              span {
+                @include main_text_template(
+                  $main-color,
+                  0.6rem,
+                  400,
+                  0.875rem,
+                  0.03rem
+                );
+              }
+            }
+          }
+        }
+      }
+      .second_character {
+        left: 50px;
+        .second_character_image {
+          .second_char {
+            width: 225px;
+            object-fit: contain;
+          }
+          .supp_info {
+            top: 15px;
+            left: -55px;
+            padding: 0.438rem 0.583rem 0.438rem 0.688rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -14,10 +159,188 @@
   .container {
     width: 520px;
   }
+  .hero_offer {
+    flex-direction: column;
+    padding: 1.125rem 0 4.25rem;
+    .offer {
+      margin: 0.875rem 0 3rem;
+      span {
+        @include main_text_template(
+          $liquid-color,
+          0.713rem,
+          400,
+          0.875rem,
+          0rem
+        );
+        margin-left: 1rem;
+      }
+      h1 {
+        @include main_text_template($main-color, 2.6rem, 400, 2.6rem, 0.03rem);
+        margin: 0 4rem 1rem 2rem;
+      }
+      p {
+        @include main_text_template(
+          $main-color,
+          0.875rem,
+          400,
+          1.2rem,
+          0.03rem
+        );
+        margin-left: 2.3rem;
+      }
+    }
+    .hero {
+      width: 520px;
+      height: 360px;
+      .main_character {
+        left: 210px;
+        top: 45px;
+        .main_character_image {
+          .main_char {
+            width: 260px;
+            object-fit: contain;
+          }
+          .supp_info_main {
+            padding: 0.438rem 0.875rem 0.438rem 0.688rem;
+            left: -85px;
+            bottom: 10px;
+            img {
+              width: 34px;
+              object-fit: contain;
+              margin-right: 0.5rem;
+            }
+            .text {
+              p {
+                @include main_text_template(
+                  $main-color,
+                  0.875rem,
+                  400,
+                  0.925rem,
+                  0.03rem
+                );
+              }
+              span {
+                @include main_text_template(
+                  $main-color,
+                  0.6rem,
+                  400,
+                  0.875rem,
+                  0.03rem
+                );
+              }
+            }
+          }
+        }
+      }
+      .second_character {
+        left: 80px;
+        .second_character_image {
+          .second_char {
+            width: 205px;
+            object-fit: contain;
+          }
+          .supp_info {
+            top: 15px;
+            left: -55px;
+            padding: 0.438rem 0.583rem 0.438rem 0.688rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include mobile() {
   .container {
     width: 420px;
+  }
+  .hero_offer {
+    flex-direction: column;
+    padding: 0.6rem 0 4.25rem;
+    .offer {
+      margin: 0.875rem 0 3rem;
+      span {
+        @include main_text_template(
+          $liquid-color,
+          0.613rem,
+          400,
+          0.875rem,
+          0rem
+        );
+        margin-left: 2rem;
+      }
+      h1 {
+        @include main_text_template($main-color, 2rem, 400, 2rem, 0.03rem);
+        margin: 0 4rem 0.4rem 3rem;
+      }
+      p {
+        @include main_text_template(
+          $main-color,
+          0.675rem,
+          400,
+          0.675rem,
+          0.03rem
+        );
+        margin-left: 3.1rem;
+      }
+    }
+    .hero {
+      width: 520px;
+      height: 360px;
+      .main_character {
+        left: 160px;
+        top: 120px;
+        .main_character_image {
+          .main_char {
+            width: 220px;
+            object-fit: contain;
+          }
+          .supp_info_main {
+            padding: 0.438rem 0.875rem 0.438rem 0.688rem;
+            left: -65px;
+            bottom: 10px;
+            img {
+              width: 34px;
+              object-fit: contain;
+              margin-right: 0.5rem;
+            }
+            .text {
+              p {
+                @include main_text_template(
+                  $main-color,
+                  0.775rem,
+                  400,
+                  0.775rem,
+                  0.03rem
+                );
+              }
+              span {
+                @include main_text_template(
+                  $main-color,
+                  0.6rem,
+                  400,
+                  0.875rem,
+                  0.03rem
+                );
+              }
+            }
+          }
+        }
+      }
+      .second_character {
+        left: 180px;
+        .second_character_image {
+          .second_char {
+            width: 180px;
+            object-fit: contain;
+          }
+          .supp_info {
+            top: 15px;
+            left: -55px;
+            padding: 0.438rem 0.583rem 0.438rem 0.688rem;
+          }
+        }
+      }
+    }
   }
 }

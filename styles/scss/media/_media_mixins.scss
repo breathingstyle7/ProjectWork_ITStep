@@ -21,3 +21,11 @@
     @content;
   }
 }
+
+@mixin main_text_template($main-color, $fz, $fw, $lh, $ls) {
+  color: $main-color;
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
