@@ -137,10 +137,12 @@
     padding: 2.5rem 0;
     transition: opacity 1s ease;
     .buttons {
-      width: 50%;
+      width: auto;
+      height: fit-content;
       a {
-        width: 32%;
-        padding: 0.875rem 3.063rem;
+        width: auto;
+        margin-right: 0.725rem;
+        padding: 0.675rem 4.063rem;
         border: 1px solid $main-color;
         border-radius: 1.875rem;
         font-size: 1.375rem;
@@ -159,7 +161,9 @@
     .second_hero_container {
       padding-top: 4rem;
       img {
+        margin: 0 7rem;
         width: auto;
+        object-fit: contain;
       }
       .aside_text {
         width: 49%;
@@ -229,7 +233,7 @@
         @include main_text_template(#fff, 1rem, 700, 1rem, 0.03rem);
         text-align: center;
         padding: 1rem 2.5rem;
-        width: 40%;
+        width: fit-content;
         background-color: $main-color;
         border-radius: 0.4rem;
         transform: translateX(290px);
@@ -245,33 +249,43 @@
     .text {
       width: 48%;
       padding: 4rem 5.625rem 3.75rem 3.75rem;
-      span {
-        @include main_text_template(#fff, 1rem, 400, 1.125rem, 0.03rem);
-        background-color: $liquid-color;
-        border-radius: 1.875rem;
-        padding: 0.5rem 1.25rem;
-        width: 3.75rem;
-        margin-bottom: 0.375rem;
-        &:nth-of-type(2) {
+      .text__block {
+        span {
+          @include main_text_template(#fff, 1rem, 400, 1.125rem, 0.03rem);
+          background-color: $liquid-color;
+          border-radius: 1.875rem;
+          padding: 0.5rem 1.25rem;
+          width: 3.75rem;
+          margin-bottom: 0.375rem;
+        }
+        .color__02 {
           background-color: $second-color;
         }
-        &:nth-of-type(3) {
+        .color__03 {
           background-color: $second-liquid-color;
         }
+        h2 {
+          @include main_text_template($main-color, 2rem, 700, 2rem, 0.03rem);
+          margin-bottom: 0.875rem;
+        }
+        p {
+          @include main_text_template(
+            $main-color,
+            1.125rem,
+            400,
+            1.625rem,
+            0.03rem
+          );
+          margin-bottom: 2rem;
+        }
       }
-      h2 {
-        @include main_text_template($main-color, 2rem, 700, 2rem, 0.03rem);
-        margin-bottom: 0.875rem;
+    }
+    img {
+      &:nth-of-type(2) {
+        display: none;
       }
-      p {
-        @include main_text_template(
-          $main-color,
-          1.125rem,
-          400,
-          1.625rem,
-          0.03rem
-        );
-        margin-bottom: 2rem;
+      &:nth-of-type(3) {
+        display: none;
       }
     }
   }

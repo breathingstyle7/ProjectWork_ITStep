@@ -49,6 +49,7 @@
   }
   .header {
     margin: 1.063rem auto 1.4rem;
+    padding: 0.6rem 1.75rem;
     display: flex;
     justify-content: space-between;
     .navbar {
@@ -70,11 +71,16 @@
 
 @include mobile() {
   .container {
-    width: 420px;
+    width: 390px;
   }
   .header {
     display: flex;
     justify-content: space-between;
+    padding: 0.275rem 1.75rem;
+    .logo_image {
+      width: 72px;
+      object-fit: contain;
+    }
     .navbar {
       display: none;
     }
@@ -87,6 +93,9 @@
     .humburger {
       .menu {
         display: block;
+        svg {
+          margin-bottom: -5px;
+        }
       }
     }
   }

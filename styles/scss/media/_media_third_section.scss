@@ -1,0 +1,461 @@
+@include desktop() {
+  .container {
+    width: 960px;
+  }
+  .third_section {
+    padding-bottom: 11.563rem;
+    .top_side {
+      margin-bottom: 5.25rem;
+      img {
+        width: 500px;
+        object-fit: contain;
+      }
+      .text {
+        width: 48%;
+        padding: 1.5rem 0.625rem 0 3rem;
+        span {
+          @include main_text_template(
+            $main-color,
+            2.025rem,
+            400,
+            2.6rem,
+            0.03rem
+          );
+          text-transform: uppercase;
+          margin-top: 0.5rem;
+        }
+        h2 {
+          @include main_text_template(
+            $main-color,
+            2.6rem,
+            400,
+            2.6rem,
+            0.03rem
+          );
+          margin-bottom: 2rem;
+        }
+        p {
+          @include main_text_template(
+            $main-color,
+            1.075rem,
+            400,
+            1.625rem,
+            0.03rem
+          );
+          margin-bottom: 2rem;
+        }
+        a {
+          @include main_text_template(#fff, 0.925rem, 700, 1rem, 0.03rem);
+          width: fit-content;
+          transform: translateX(215px);
+          &:hover {
+            width: 36%;
+          }
+        }
+      }
+    }
+    .bottom_side {
+      flex-direction: column;
+      position: relative;
+      .text {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 4rem 2rem 20rem;
+        .text__block {
+          &:nth-of-type(2) {
+            margin-top: 2rem;
+          }
+          &:nth-of-type(3) {
+            margin-top: 4rem;
+          }
+          h2 {
+            @include main_text_template(
+              $main-color,
+              1.75rem,
+              700,
+              1.75rem,
+              0.03rem
+            );
+          }
+          p {
+            @include main_text_template(
+              $main-color,
+              1rem,
+              400,
+              1.625rem,
+              0.03rem
+            );
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      img {
+        position: absolute;
+        width: 280px;
+        object-fit: contain;
+        top: 374px;
+        left: 25px;
+        &:nth-of-type(2) {
+          display: block;
+          top: 342px;
+          left: 325px;
+        }
+        &:nth-of-type(3) {
+          display: block;
+          top: 310px;
+          left: 625px;
+        }
+      }
+    }
+  }
+}
+
+@include laptop() {
+  .container {
+    width: 760px;
+  }
+  .third_section {
+    padding-bottom: 11.563rem;
+    .top_side {
+      margin-bottom: 5.25rem;
+      img {
+        width: 400px;
+        object-fit: contain;
+      }
+      .text {
+        width: 48%;
+        padding: 1.5rem 0.625rem 0 1rem;
+        span {
+          @include main_text_template(
+            $main-color,
+            1.6rem,
+            400,
+            1.6rem,
+            0.03rem
+          );
+          text-transform: uppercase;
+          margin-top: 0.5rem;
+        }
+        h2 {
+          @include main_text_template($main-color, 2rem, 400, 2rem, 0.03rem);
+          margin-bottom: 1.2rem;
+        }
+        p {
+          @include main_text_template(
+            $main-color,
+            0.925rem,
+            400,
+            1rem,
+            0.03rem
+          );
+          margin-bottom: 2rem;
+        }
+        a {
+          @include main_text_template(#fff, 0.825rem, 700, 1rem, 0.03rem);
+          width: fit-content;
+          transform: translateX(160px);
+          padding: 0.6rem 2rem;
+          &:hover {
+            width: 36%;
+          }
+        }
+      }
+    }
+    .bottom_side {
+      flex-direction: column;
+      position: relative;
+      .text {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 3rem 1rem 16rem;
+        .text__block {
+          margin-right: 0.6rem;
+          &:nth-of-type(2) {
+            margin-top: 2rem;
+          }
+          &:nth-of-type(3) {
+            margin-top: 4rem;
+          }
+          span {
+            @include main_text_template(#fff, 0.875rem, 400, 1.125rem, 0.03rem);
+            text-align: center;
+            padding: 0.3rem 1rem;
+            width: 3.5rem;
+          }
+          h2 {
+            @include main_text_template(
+              $main-color,
+              1.25rem,
+              700,
+              1.25rem,
+              0.03rem
+            );
+          }
+          p {
+            @include main_text_template(
+              $main-color,
+              0.825rem,
+              400,
+              0.925rem,
+              0.03rem
+            );
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      img {
+        position: absolute;
+        width: 210px;
+        object-fit: contain;
+        top: 314px;
+        left: 25px;
+        &:nth-of-type(2) {
+          top: 282px;
+          left: 265px;
+        }
+        &:nth-of-type(3) {
+          top: 260px;
+          left: 510px;
+        }
+      }
+    }
+  }
+}
+
+@include tablet() {
+  .container {
+    width: 520px;
+  }
+  .third_section {
+    padding-bottom: 11.563rem;
+    .top_side {
+      margin-bottom: 5.25rem;
+      img {
+        width: 300px;
+        object-fit: contain;
+      }
+      .text {
+        padding: 0 0.625rem 0 1rem;
+        position: relative;
+        span {
+          @include main_text_template(
+            $main-color,
+            1.2rem,
+            400,
+            1.2rem,
+            0.03rem
+          );
+          text-transform: uppercase;
+          margin-top: 0.5rem;
+        }
+        h2 {
+          @include main_text_template(
+            $main-color,
+            1.6rem,
+            400,
+            1.6rem,
+            0.03rem
+          );
+          margin-bottom: 1rem;
+        }
+        p {
+          @include main_text_template(
+            $main-color,
+            0.925rem,
+            400,
+            1rem,
+            0.03rem
+          );
+          margin-bottom: 0;
+        }
+        a {
+          @include main_text_template(#fff, 0.825rem, 700, 1rem, 0.03rem);
+          width: fit-content;
+          padding: 0.6rem 2rem;
+          position: absolute;
+          left: -460px;
+          bottom: -55px;
+          &:hover {
+            width: 36%;
+          }
+        }
+      }
+    }
+    .bottom_side {
+      flex-direction: column;
+      position: relative;
+      .text {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 3rem 0.2rem 10rem;
+        .text__block {
+          margin-right: 0.8rem;
+          &:nth-of-type(2) {
+            margin-top: 0rem;
+          }
+          &:nth-of-type(3) {
+            margin-top: 0rem;
+          }
+          span {
+            @include main_text_template(#fff, 0.825rem, 400, 1rem, 0.03rem);
+            text-align: center;
+            padding: 0.3rem 0.775rem;
+            width: 3.5rem;
+          }
+          h2 {
+            @include main_text_template(
+              $main-color,
+              1rem,
+              700,
+              1.25rem,
+              0.03rem
+            );
+          }
+          p {
+            @include main_text_template(
+              $main-color,
+              0.825rem,
+              400,
+              0.925rem,
+              0.03rem
+            );
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      img {
+        position: absolute;
+        width: 210px;
+        object-fit: contain;
+        top: 240px;
+        left: 25px;
+        &:nth-of-type(2) {
+          top: 240px;
+          left: 265px;
+        }
+        &:nth-of-type(3) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .container {
+    width: 340px;
+  }
+  .third_section {
+    padding: 14rem 0 11.563rem;
+    .top_side {
+      position: relative;
+      margin-bottom: 3.75rem;
+      flex-direction: column;
+      img {
+        position: absolute;
+        width: 230px;
+        margin: 0 auto 1rem;
+        object-fit: contain;
+        left: 50px;
+        top: 85px;
+      }
+      .text {
+        width: fit-content;
+        padding: 0 0.625rem 0 1rem;
+        position: relative;
+        span {
+          @include main_text_template($main-color, 1rem, 400, 1rem, 0.03rem);
+          text-transform: uppercase;
+          margin-top: 0.5rem;
+          margin-left: 2rem;
+        }
+        h2 {
+          width: 65%;
+          @include main_text_template(
+            $main-color,
+            1.4rem,
+            400,
+            1.4rem,
+            0.03rem
+          );
+          margin-bottom: 13rem;
+          margin-left: 1rem;
+        }
+        p {
+          width: 90%;
+          @include main_text_template(
+            $main-color,
+            0.725rem,
+            400,
+            0.725rem,
+            0.03rem
+          );
+          margin-left: 1rem;
+        }
+        a {
+          @include main_text_template(#fff, 0.625rem, 700, 1rem, 0.03rem);
+          width: fit-content;
+          padding: 0.3rem 1.6rem;
+          position: absolute;
+          left: 20px;
+          bottom: -55px;
+          &:hover {
+            width: 36%;
+          }
+        }
+      }
+    }
+    .bottom_side {
+      flex-direction: column;
+      position: relative;
+      .text {
+        flex-direction: column;
+        width: 90%;
+        padding: 3rem 0.2rem 10rem;
+        margin: 0 auto;
+        .text__block {
+          span {
+            @include main_text_template(#fff, 0.775rem, 400, 0.825rem, 0.03rem);
+            text-align: center;
+            padding: 0.3rem 0.775rem;
+            width: 3.5rem;
+            margin-bottom: 0.1rem;
+          }
+          h2 {
+            @include main_text_template(
+              $main-color,
+              1rem,
+              700,
+              1.25rem,
+              0.03rem
+            );
+            margin-bottom: 0.4rem;
+          }
+          p {
+            @include main_text_template(
+              $main-color,
+              0.775rem,
+              400,
+              0.925rem,
+              0.03rem
+            );
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      img {
+        position: absolute;
+        width: 240px;
+        object-fit: contain;
+        top: 430px;
+        left: 50px;
+        &:nth-of-type(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}

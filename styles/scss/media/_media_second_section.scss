@@ -1,0 +1,302 @@
+@include desktop() {
+  .container {
+    width: 960px;
+  }
+  .second_section {
+    padding: 5.625rem 3rem 3.625rem;
+    .main_text {
+      h2 {
+        @include main_text_template($main-color, 3.2rem, 400, 3.2rem, 0.03rem);
+        margin-bottom: 1.463rem;
+      }
+      p {
+        @include main_text_template(
+          $main-color,
+          1.063rem,
+          400,
+          1.625rem,
+          0.03rem
+        );
+        margin-bottom: 2rem;
+      }
+    }
+    .under_text_info {
+      padding: 2.5rem 0;
+      .buttons {
+        width: 50%;
+        a {
+          margin-right: 0.725rem;
+          padding: 0.675rem 3.863rem;
+          font-size: 1.175rem;
+        }
+      }
+      .second_hero_container {
+        padding-top: 2rem;
+        img {
+          width: 300px;
+          margin: 0 6rem;
+          object-fit: contain;
+        }
+        .aside_text {
+          width: 49%;
+          padding: 5.9rem 1rem 1rem 0;
+          span {
+            @include main_text_template(
+              $second-color,
+              0.925rem,
+              400,
+              0rem,
+              0.03rem
+            );
+            margin-bottom: 0.925rem;
+          }
+          h3 {
+            @include main_text_template(
+              $main-color,
+              2rem,
+              400,
+              1.2rem,
+              0.03rem
+            );
+            margin-bottom: 1.113rem;
+          }
+          p {
+            @include main_text_template(
+              $main-color,
+              1.075rem,
+              400,
+              1.525rem,
+              0.03rem
+            );
+          }
+        }
+      }
+    }
+  }
+}
+
+@include laptop() {
+  .container {
+    width: 760px;
+  }
+  .second_section {
+    padding: 5.625rem 3rem 3.625rem;
+    .main_text {
+      h2 {
+        @include main_text_template($main-color, 2.6rem, 400, 2.6rem, 0.03rem);
+        margin-bottom: 0.8rem;
+      }
+      p {
+        @include main_text_template(
+          $main-color,
+          1.063rem,
+          400,
+          1.2rem,
+          0.03rem
+        );
+        margin-bottom: 1.4rem;
+      }
+    }
+    .under_text_info {
+      .buttons {
+        width: auto;
+        a {
+          margin-right: 0.725rem;
+          padding: 0.6rem 3rem;
+          font-size: 1rem;
+        }
+      }
+      .second_hero_container {
+        padding-top: 0;
+        img {
+          width: 260px;
+          margin: 0 3rem;
+          object-fit: contain;
+        }
+        .aside_text {
+          width: 49%;
+          padding: 5.9rem 1rem 1rem 0;
+          span {
+            @include main_text_template(
+              $second-color,
+              0.775rem,
+              400,
+              0rem,
+              0.03rem
+            );
+            margin-bottom: 0.925rem;
+          }
+          h3 {
+            @include main_text_template(
+              $main-color,
+              1.575rem,
+              400,
+              0.775rem,
+              0.03rem
+            );
+            margin-bottom: 1.113rem;
+          }
+          p {
+            @include main_text_template(
+              $main-color,
+              0.875rem,
+              400,
+              1.2rem,
+              0.03rem
+            );
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet() {
+  .container {
+    width: 520px;
+  }
+  .second_section {
+    padding: 5.625rem 3rem 3.625rem;
+    .main_text {
+      h2 {
+        @include main_text_template($main-color, 2.2rem, 400, 2.2rem, 0.03rem);
+        margin-bottom: 0.8rem;
+      }
+      p {
+        @include main_text_template($main-color, 0.875rem, 400, 1rem, 0.03rem);
+        margin-bottom: 1.4rem;
+      }
+    }
+    .under_text_info {
+      flex-direction: row;
+      .buttons {
+        height: fit-content;
+        flex-direction: column;
+        a {
+          &:nth-of-type(1) {
+            margin: 2rem auto 3.5rem;
+          }
+          &:nth-of-type(2) {
+            margin: 0 auto 3.5rem;
+          }
+          &:nth-of-type(3) {
+            margin: 0 auto;
+          }
+          padding: 0.6rem 3rem;
+          font-size: 0.875rem;
+        }
+      }
+      .second_hero_container {
+        padding-top: 0;
+        flex-direction: column;
+        img {
+          width: 260px;
+          margin: -2.2rem auto 0;
+          object-fit: contain;
+        }
+        .aside_text {
+          padding: 3rem 1rem 1rem 0;
+          span {
+            @include main_text_template(
+              $second-color,
+              0.775rem,
+              400,
+              0rem,
+              0.03rem
+            );
+            margin: 0 0 1.5rem -6.525rem;
+          }
+          h3 {
+            width: 300px;
+            @include main_text_template(
+              $main-color,
+              1.575rem,
+              400,
+              0.1rem,
+              0.03rem
+            );
+            margin: 0 0 1.2rem -5.525rem;
+          }
+          p {
+            width: 420px;
+            @include main_text_template(
+              $main-color,
+              0.875rem,
+              400,
+              1.2rem,
+              0.03rem
+            );
+            margin: 0 0 1rem -7.525rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .container {
+    width: 340px;
+  }
+  .second_section {
+    padding: 2.625rem 3rem 2.625rem;
+    .main_text {
+      h2 {
+        @include main_text_template($main-color, 1.6rem, 400, 1.6rem, 0.03rem);
+        margin-bottom: 0.4rem;
+      }
+      p {
+        @include main_text_template(
+          $main-color,
+          0.675rem,
+          400,
+          0.6rem,
+          0.03rem
+        );
+        margin-bottom: 1.4rem;
+      }
+    }
+    .under_text_info {
+      padding: 0;
+      flex-direction: column;
+      .buttons {
+        height: fit-content;
+        flex-direction: row;
+        margin-top: -2.2rem;
+        a {
+          &:nth-of-type(1) {
+            width: fit-content;
+            margin: 5.5rem 0 -3rem -2rem;
+          }
+          &:nth-of-type(2) {
+            width: fit-content;
+            margin: 2rem auto 0.5rem;
+          }
+          width: fit-content;
+          &:nth-of-type(3) {
+            margin: 5.5rem -2rem -3rem 0;
+          }
+          padding: 0.3rem 2rem;
+          font-size: 0.875rem;
+        }
+      }
+      .second_hero_container {
+        padding-top: 0;
+        width: fit-content;
+        margin-right: -3rem;
+        position: relative;
+        img {
+          top: 23px;
+          left: 50px;
+          position: absolute;
+          width: 150px;
+          object-fit: contain;
+        }
+        .aside_text {
+          display: none;
+          padding: 3rem 1rem 1rem 0;
+        }
+      }
+    }
+  }
+}

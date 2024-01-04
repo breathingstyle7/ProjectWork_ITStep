@@ -18,6 +18,6 @@
 
 @include mobile() {
   .container {
-    width: 420px;
+    width: 340px;
   }
 }

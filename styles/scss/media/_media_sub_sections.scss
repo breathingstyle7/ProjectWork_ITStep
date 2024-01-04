@@ -1,0 +1,53 @@
+@include desktop() {
+  .container {
+    width: 960px;
+  }
+  .first_sub__section {
+    .infinity_anim {
+      img {
+        width: 140px;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@include laptop() {
+  .container {
+    width: 760px;
+  }
+  .first_sub__section {
+    .infinity_anim {
+      img {
+        width: 120px;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@include tablet() {
+  .container {
+    width: 520px;
+  }
+  .first_sub__section {
+    .infinity_anim {
+      img {
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .container {
+    width: 340px;
+  }
+  .first_sub__section {
+    display: none;
+  }
+}
