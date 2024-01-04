@@ -5,8 +5,8 @@
     display: flex;
     animation: scroll 40s linear infinite;
     img {
-      width: 100%;
-      height: auto;
+      width: auto;
+      object-fit: contain;
     }
     @keyframes scroll {
       0% {
