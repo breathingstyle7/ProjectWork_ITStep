@@ -153,8 +153,7 @@
         &:hover {
           background-color: $main-color;
           color: #fff;
-          border: none;
-          border-radius: 1.25rem;
+          border-radius: 1.2rem;
         }
       }
     }
@@ -237,10 +236,9 @@
         background-color: $main-color;
         border-radius: 0.4rem;
         transform: translateX(290px);
-        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
         &:hover {
-          width: 36%;
-          border-radius: 2.2rem;
+          border-radius: 3rem;
         }
       }
     }

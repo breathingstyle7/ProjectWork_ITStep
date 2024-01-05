@@ -422,6 +422,33 @@
     height: auto;
     object-fit: contain;
   }
+  .second_sub__section {
+    padding: 3rem 4rem;
+  }
+  .second_sub__section .container h2 {
+    color: #2f2f2f;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    letter-spacing: 0.03rem;
+  }
+  .second_sub__section .container p {
+    color: #2f2f2f;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.425;
+    letter-spacing: 0.03rem;
+  }
+  .second_sub__section .container a {
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+    letter-spacing: 0.03rem;
+  }
+  .second_sub__section .container:hover {
+    font-size: 0.975rem;
+  }
 }
 @media screen and (max-width: 992px) {
   .container {
@@ -431,6 +458,37 @@
     width: 120px;
     height: auto;
     object-fit: contain;
+  }
+  .second_sub__section {
+    padding: 3rem 4rem;
+  }
+  .second_sub__section .container h2 {
+    color: #2f2f2f;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 1rem;
+  }
+  .second_sub__section .container p {
+    color: #2f2f2f;
+    font-size: 0.925rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 2.2rem;
+  }
+  .second_sub__section .container a {
+    color: #fff;
+    font-size: 0.775rem;
+    font-weight: 400;
+    line-height: 0.0775rem;
+    letter-spacing: 0.03rem;
+    padding: 0.925rem 1.6rem;
+  }
+  .second_sub__section .container a:hover {
+    font-size: 0.875rem;
+    border-radius: 1.5rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -442,6 +500,37 @@
     height: auto;
     object-fit: contain;
   }
+  .second_sub__section {
+    width: 100%;
+    padding: 1.6rem 2.4rem;
+  }
+  .second_sub__section .container h2 {
+    color: #2f2f2f;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 0.8rem;
+  }
+  .second_sub__section .container p {
+    color: #2f2f2f;
+    font-size: 0.825rem;
+    font-weight: 400;
+    line-height: 0.925rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 1.4rem;
+  }
+  .second_sub__section .container a {
+    color: #fff;
+    font-size: 0.775rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+    letter-spacing: 0.03rem;
+    padding: 0.5rem 1rem;
+  }
+  .second_sub__section .container a:hover {
+    font-size: 0.825rem;
+  }
 }
 @media screen and (max-width: 576px) {
   .container {
@@ -449,6 +538,41 @@
   }
   .first_sub__section {
     display: none;
+  }
+  .second_sub__section {
+    width: 100%;
+    background-color: #82cbac;
+    padding: 1.6rem 2rem 1.6rem 1.2rem;
+  }
+  .second_sub__section .container h2 {
+    color: #2f2f2f;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 0.8rem;
+  }
+  .second_sub__section .container p {
+    width: 90%;
+    color: #2f2f2f;
+    font-size: 0.775rem;
+    font-weight: 400;
+    line-height: 0.925rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 1.4rem;
+  }
+  .second_sub__section .container a {
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 0.8rem;
+    letter-spacing: 0.03rem;
+    padding: 0.3rem 0.8rem;
+    transition: none;
+  }
+  .second_sub__section .container a:hover {
+    font-size: 0.6rem;
+    border-radius: 0;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -551,6 +675,9 @@
     margin-right: 0.725rem;
     padding: 0.6rem 3rem;
     font-size: 1rem;
+  }
+  .second_section .under_text_info .buttons a:hover {
+    border-radius: 1.2rem;
   }
   .second_section .under_text_info .second_hero_container {
     padding-top: 0;
@@ -885,7 +1012,7 @@
   }
   .third_section .top_side .text a {
     color: #fff;
-    font-size: 0.825rem;
+    font-size: 0.775rem;
     font-weight: 700;
     line-height: 1rem;
     letter-spacing: 0.03rem;
@@ -894,7 +1021,8 @@
     padding: 0.6rem 2rem;
   }
   .third_section .top_side .text a:hover {
-    width: 36%;
+    width: fit-content;
+    font-size: 0.825rem;
   }
   .third_section .bottom_side {
     flex-direction: column;
@@ -1001,18 +1129,19 @@
   }
   .third_section .top_side .text a {
     color: #fff;
-    font-size: 0.825rem;
+    font-size: 0.675rem;
     font-weight: 700;
     line-height: 1rem;
     letter-spacing: 0.03rem;
     width: fit-content;
-    padding: 0.6rem 2rem;
+    padding: 0.5rem 1.8rem;
     position: absolute;
     left: -460px;
     bottom: -55px;
   }
   .third_section .top_side .text a:hover {
-    width: 36%;
+    width: fit-content;
+    font-size: 0.725rem;
   }
   .third_section .bottom_side {
     flex-direction: column;
@@ -1129,7 +1258,7 @@
   }
   .third_section .top_side .text a {
     color: #fff;
-    font-size: 0.625rem;
+    font-size: 0.575rem;
     font-weight: 700;
     line-height: 1rem;
     letter-spacing: 0.03rem;
@@ -1140,7 +1269,8 @@
     bottom: -55px;
   }
   .third_section .top_side .text a:hover {
-    width: 36%;
+    width: fit-content;
+    font-size: 0.625rem;
   }
   .third_section .bottom_side {
     flex-direction: column;
@@ -1188,5 +1318,25 @@
   }
   .third_section .bottom_side img:nth-of-type(2) {
     display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 760px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 520px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 340px;
   }
 }

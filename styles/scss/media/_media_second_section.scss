@@ -104,6 +104,9 @@
           margin-right: 0.725rem;
           padding: 0.6rem 3rem;
           font-size: 1rem;
+          &:hover {
+            border-radius: 1.2rem;
+          }
         }
       }
       .second_hero_container {
