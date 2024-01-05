@@ -236,9 +236,10 @@
         background-color: $main-color;
         border-radius: 0.4rem;
         transform: translateX(290px);
-        transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
         &:hover {
-          border-radius: 3rem;
+          font-size: 1.15rem;
+          border-radius: 1.5rem;
         }
       }
     }
@@ -348,15 +349,15 @@
     .btn {
       @include main_text_template(#fff, 0.875rem, 700, 1rem, 0.03rem);
       text-align: center;
-      width: 12%;
+      width: fit-content;
       margin: 3.75rem auto;
       background-color: $main-color;
       padding: 1rem 2rem;
       border-radius: 0.3rem;
-      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
       &:hover {
-        width: 10%;
-        border-radius: 2.2rem;
+        font-size: 0.975rem;
+        border-radius: 1.5rem;
       }
     }
   }
@@ -428,17 +429,18 @@
   a {
     @include main_text_template(#fff, 0.875rem, 700, 1rem, 0.03rem);
     text-align: center;
-    width: 12%;
+    width: fit-content;
     margin: 3.75rem auto;
     background-color: $main-color;
     padding: 1rem 2rem;
     border-radius: 0.3rem;
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
     &:hover {
-      width: 10%;
-      border-radius: 2.2rem;
+      font-size: 0.975rem;
+      border-radius: 1.5rem;
     }
   }
+
   table {
     width: 1070px;
     margin: 0 auto;

@@ -359,10 +359,11 @@ a {
   background-color: #2f2f2f;
   border-radius: 0.4rem;
   transform: translateX(290px);
-  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .third_section .top_side .text a:hover {
-  border-radius: 3rem;
+  font-size: 1.15rem;
+  border-radius: 1.5rem;
 }
 .third_section .bottom_side .text {
   width: 48%;
@@ -468,16 +469,16 @@ a {
   line-height: 1rem;
   letter-spacing: 0.03rem;
   text-align: center;
-  width: 12%;
+  width: fit-content;
   margin: 3.75rem auto;
   background-color: #2f2f2f;
   padding: 1rem 2rem;
   border-radius: 0.3rem;
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .fourth_section .gallery .btn:hover {
-  width: 10%;
-  border-radius: 2.2rem;
+  font-size: 0.975rem;
+  border-radius: 1.5rem;
 }
 
 .last_section {
@@ -543,16 +544,16 @@ a {
   line-height: 1rem;
   letter-spacing: 0.03rem;
   text-align: center;
-  width: 12%;
+  width: fit-content;
   margin: 3.75rem auto;
   background-color: #2f2f2f;
   padding: 1rem 2rem;
   border-radius: 0.3rem;
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .last_section a:hover {
-  width: 10%;
-  border-radius: 2.2rem;
+  font-size: 0.975rem;
+  border-radius: 1.5rem;
 }
 .last_section table {
   width: 1070px;

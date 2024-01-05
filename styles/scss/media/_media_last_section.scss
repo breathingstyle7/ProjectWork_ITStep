@@ -1,0 +1,120 @@
+@include desktop() {
+  .container {
+    width: 960px;
+  }
+  .last_section {
+    margin: 6rem auto;
+    align-items: center;
+    h2 {
+      @include main_text_template($main-color, 3.6rem, 400, 3.6rem, 0.03rem);
+      text-align: center;
+      margin-bottom: 2.563rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      width: 900px;
+      margin: 0.5rem auto;
+      .item {
+        margin: 0 auto;
+        .main-grid-image {
+          width: 260px;
+          margin: auto auto;
+        }
+        .item-info {
+          padding: 1.5rem;
+          align-items: center;
+          .item-sub-text {
+            p {
+              @include main_text_template(
+                $main-color,
+                0.875rem,
+                400,
+                1rem,
+                0.03rem
+              );
+              margin-right: 0.5rem;
+            }
+            span {
+              @include main_text_template(
+                $main-color,
+                0.925rem,
+                700,
+                1rem,
+                0.03rem
+              );
+            }
+            margin-right: 1rem;
+          }
+          .item-sub-icons {
+            .sub-icon-1 {
+              padding: 0.625rem;
+              margin-right: 0.5rem;
+            }
+            .sub-icon-2 {
+              padding: 0.625rem 0.8rem;
+              border-radius: 1.875rem;
+            }
+          }
+        }
+      }
+    }
+    a {
+      @include main_text_template(#fff, 0.875rem, 700, 1rem, 0.03rem);
+      margin: 3.75rem auto;
+      padding: 1rem 2rem;
+      border-radius: 0.3rem;
+      &:hover {
+        font-size: 0.975rem;
+        border-radius: 1.5rem;
+      }
+    }
+
+    table {
+      width: 860px;
+      margin: 0 auto;
+      caption {
+        @include main_text_template($main-color, 3.6rem, 400, 3.6rem, 0.03rem);
+        text-align: left;
+        margin-bottom: 3rem;
+      }
+      tr {
+        td {
+          @include main_text_template(
+            $main-color,
+            1.175rem,
+            400,
+            1.5rem,
+            0.03rem
+          );
+          padding: 1.625rem;
+          img {
+            transform: none;
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            &:hover {
+              transform: rotateX(-180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include laptop() {
+  .container {
+    width: 760px;
+  }
+}
+
+@include tablet() {
+  .container {
+    width: 520px;
+  }
+}
+
+@include mobile() {
+  .container {
+    width: 340px;
+  }
+}
