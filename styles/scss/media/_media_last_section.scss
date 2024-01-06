@@ -105,16 +105,307 @@
   .container {
     width: 760px;
   }
+  .last_section {
+    margin: 6rem auto;
+    align-items: center;
+    h2 {
+      @include main_text_template($main-color, 3.2rem, 400, 3.2rem, 0.03rem);
+      text-align: center;
+      margin-bottom: 2.563rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 15rem 15rem;
+      width: 720px;
+      .item {
+        .main-grid-image {
+          width: 210px;
+        }
+        .item-info {
+          .item-sub-text {
+            p {
+              @include main_text_template(
+                $main-color,
+                0.875rem,
+                400,
+                1rem,
+                0.03rem
+              );
+              margin-right: 0.5rem;
+            }
+            span {
+              @include main_text_template(
+                $main-color,
+                0.925rem,
+                700,
+                1rem,
+                0.03rem
+              );
+            }
+            margin-right: 1rem;
+          }
+          .item-sub-icons {
+            .sub-icon-1 {
+              padding: 0.5rem;
+              margin-right: 0.5rem;
+            }
+            .sub-icon-2 {
+              padding: 0.5rem 0.675rem;
+              border-radius: 1.875rem;
+            }
+          }
+        }
+      }
+    }
+    a {
+      @include main_text_template(#fff, 0.775rem, 700, 0.875rem, 0.03rem);
+      margin: 3.75rem auto;
+      padding: 0.725rem 1.725rem;
+      border-radius: 0.3rem;
+      &:hover {
+        font-size: 0.875rem;
+        border-radius: 1.5rem;
+      }
+    }
+
+    table {
+      width: 700px;
+      margin: 0 auto;
+      caption {
+        @include main_text_template($main-color, 3rem, 400, 3rem, 0.03rem);
+        margin-bottom: 2rem;
+      }
+      tr {
+        td {
+          @include main_text_template(
+            $main-color,
+            0.975rem,
+            400,
+            1rem,
+            0.03rem
+          );
+          padding: 1.2rem;
+          img {
+            width: 24px;
+            object-fit: contain;
+            transform: none;
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            &:hover {
+              transform: rotateX(-180deg);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @include tablet() {
   .container {
     width: 520px;
   }
+  .last_section {
+    margin: 6rem auto;
+    align-items: center;
+    h2 {
+      @include main_text_template($main-color, 3.2rem, 400, 3.2rem, 0.03rem);
+      text-align: center;
+      margin-bottom: 2.563rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 14.6875rem 14.6875rem;
+      grid-template-rows: auto auto auto;
+      width: 470px;
+      .item {
+        .main-grid-image {
+          width: 170px;
+        }
+        .item-info {
+          padding: 1rem 0.5rem;
+          .item-sub-text {
+            flex-direction: column;
+            text-align: left;
+            p {
+              @include main_text_template(
+                $main-color,
+                0.825rem,
+                400,
+                1rem,
+                0.03rem
+              );
+              margin-bottom: 0.3rem;
+            }
+            span {
+              @include main_text_template(
+                $main-color,
+                0.825rem,
+                700,
+                0.825rem,
+                0.03rem
+              );
+            }
+            margin-right: 0.7rem;
+          }
+          .item-sub-icons {
+            .sub-icon-1 {
+              padding: 0.4rem;
+              margin-right: 0.4rem;
+              img {
+                width: 16px;
+                object-fit: contain;
+              }
+            }
+            .sub-icon-2 {
+              padding: 0.5rem 0.675rem;
+              border-radius: 1.875rem;
+              img {
+                width: 10px;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+    a {
+      @include main_text_template(#fff, 0.7rem, 700, 0.875rem, 0.03rem);
+      margin: 3.75rem auto;
+      padding: 0.625rem 1.5rem;
+      border-radius: 0.3rem;
+      &:hover {
+        font-size: 0.775rem;
+        border-radius: 1.5rem;
+      }
+    }
+
+    table {
+      width: 470px;
+      margin: 0 auto;
+      caption {
+        @include main_text_template($main-color, 2.2rem, 400, 2.2rem, 0.03rem);
+        margin-bottom: 1rem;
+      }
+      tr {
+        td {
+          @include main_text_template($main-color, 0.825rem, 400, 1em, 0.03rem);
+          padding: 1.2rem;
+          img {
+            width: 18px;
+            object-fit: contain;
+            transform: none;
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            &:hover {
+              transform: rotateX(-180deg);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @include mobile() {
   .container {
     width: 340px;
+  }
+  .last_section {
+    margin: 6rem auto;
+    align-items: center;
+    h2 {
+      @include main_text_template($main-color, 2rem, 400, 2rem, 0.03rem);
+      text-align: center;
+      margin-bottom: 2.563rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      width: 300px;
+      .item-5 {
+        display: none;
+      }
+      .item-6 {
+        display: none;
+      }
+      .item {
+        .main-grid-image {
+          width: 170px;
+        }
+        .item-info {
+          padding: 1rem 0.5rem;
+          .item-sub-text {
+            flex-direction: column;
+            text-align: left;
+            p {
+              @include main_text_template(
+                $main-color,
+                0.825rem,
+                400,
+                1rem,
+                0.03rem
+              );
+              margin-bottom: 0.3rem;
+            }
+            span {
+              @include main_text_template(
+                $main-color,
+                0.825rem,
+                700,
+                0.825rem,
+                0.03rem
+              );
+            }
+            margin-right: 0.7rem;
+          }
+          .item-sub-icons {
+            .sub-icon-1 {
+              padding: 0.4rem;
+              margin-right: 0.4rem;
+              img {
+                width: 16px;
+                object-fit: contain;
+              }
+            }
+            .sub-icon-2 {
+              padding: 0.5rem 0.675rem;
+              border-radius: 1.875rem;
+              img {
+                width: 10px;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+    a {
+      @include main_text_template(#fff, 0.625rem, 700, 0.6rem, 0.03rem);
+      margin: 3.75rem auto;
+      padding: 0.5rem 1rem;
+      border-radius: 0.3rem;
+      &:hover {
+        font-size: 0.775rem;
+        border-radius: 1.5rem;
+      }
+    }
+
+    table {
+      width: 300px;
+      margin: 0 auto;
+      caption {
+        @include main_text_template($main-color, 1.4rem, 400, 1.4rem, 0.03rem);
+        margin-bottom: 0.8rem;
+      }
+      tr {
+        td {
+          @include main_text_template($main-color, 0.725rem, 400, 1em, 0.03rem);
+          padding: 1.2rem;
+          img {
+            width: 16px;
+          }
+        }
+      }
+    }
   }
 }
