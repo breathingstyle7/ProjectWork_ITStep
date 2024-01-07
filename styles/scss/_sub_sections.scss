@@ -23,7 +23,8 @@
 }
 
 .second_sub__section {
-  width: 100%;
+  overflow: hidden;
+  width: auto;
   background-color: $liquid-color;
   padding: 4.438rem 6rem;
   .container {

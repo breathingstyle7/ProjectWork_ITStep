@@ -1,6 +1,6 @@
 @include desktop() {
   .container {
-    width: 960px;
+    width: $container-xxl;
   }
   .first_sub__section {
     .infinity_anim {
@@ -32,7 +32,7 @@
 
 @include laptop() {
   .container {
-    width: 760px;
+    width: $container-xl;
   }
   .first_sub__section {
     .infinity_anim {
@@ -74,7 +74,7 @@
 
 @include tablet() {
   .container {
-    width: 520px;
+    width: $container-md;
   }
   .first_sub__section {
     .infinity_anim {
@@ -116,7 +116,7 @@
 
 @include mobile() {
   .container {
-    width: 340px;
+    width: $container-sm;
   }
   .first_sub__section {
     display: none;

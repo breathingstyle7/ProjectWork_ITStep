@@ -1,6 +1,6 @@
 @include desktop() {
   .container {
-    width: 960px;
+    width: $container-xxl;
   }
   .header {
     .navbar {
@@ -22,22 +22,22 @@
 
 @include laptop() {
   .container {
-    width: 760px;
+    width: $container-xl;
   }
   .header {
     margin: 1.063rem auto 1.8rem;
     .navbar {
       width: 12rem;
-      margin-right: 14rem;
+      margin-right: 12rem;
     }
     .header_social {
       display: none;
     }
     .header_btn {
       a {
-        width: 8rem;
-        padding: 0.875rem;
-        font-size: 0.875rem;
+        width: 7rem;
+        padding: 0.725rem;
+        font-size: 0.775rem;
       }
     }
   }
@@ -45,7 +45,7 @@
 
 @include tablet() {
   .container {
-    width: 520px;
+    width: $container-md;
   }
   .header {
     margin: 1.063rem auto 1.4rem;
@@ -71,7 +71,7 @@
 
 @include mobile() {
   .container {
-    width: 390px;
+    width: $container-sm;
   }
   .header {
     display: flex;

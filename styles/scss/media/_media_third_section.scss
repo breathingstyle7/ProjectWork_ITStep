@@ -1,6 +1,6 @@
 @include desktop() {
   .container {
-    width: 960px;
+    width: $container-xxl;
   }
   .third_section {
     padding-bottom: 11.563rem;
@@ -113,7 +113,7 @@
 
 @include laptop() {
   .container {
-    width: 760px;
+    width: $container-xl;
   }
   .third_section {
     padding-bottom: 11.563rem;
@@ -227,7 +227,7 @@
 
 @include tablet() {
   .container {
-    width: 520px;
+    width: $container-md;
   }
   .third_section {
     padding-bottom: 11.563rem;
@@ -348,7 +348,7 @@
 
 @include mobile() {
   .container {
-    width: 340px;
+    width: $container-sm;
   }
   .third_section {
     padding: 14rem 0 11.563rem;
