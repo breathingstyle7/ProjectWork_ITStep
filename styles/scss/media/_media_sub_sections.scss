@@ -1,6 +1,6 @@
 @include desktop() {
   .container {
-    width: 960px;
+    width: $container-xxl;
   }
   .first_sub__section {
     .infinity_anim {
@@ -11,11 +11,28 @@
       }
     }
   }
+  .second_sub__section {
+    padding: 3rem 4rem;
+    .container {
+      h2 {
+        @include main_text_template($main-color, 3.6rem, 400, 3.6rem, 0.03rem);
+      }
+      p {
+        @include main_text_template($main-color, 1rem, 400, 1.425, 0.03rem);
+      }
+      a {
+        @include main_text_template(#fff, 0.875rem, 400, 0.875rem, 0.03rem);
+      }
+      &:hover {
+        font-size: 0.975rem;
+      }
+    }
+  }
 }
 
 @include laptop() {
   .container {
-    width: 760px;
+    width: $container-xl;
   }
   .first_sub__section {
     .infinity_anim {
@@ -26,11 +43,38 @@
       }
     }
   }
+  .second_sub__section {
+    padding: 3rem 4rem;
+    .container {
+      h2 {
+        @include main_text_template($main-color, 2.4rem, 400, 2.4rem, 0.03rem);
+        margin-bottom: 1rem;
+      }
+      p {
+        @include main_text_template(
+          $main-color,
+          0.925rem,
+          400,
+          1.125rem,
+          0.03rem
+        );
+        margin-bottom: 2.2rem;
+      }
+      a {
+        @include main_text_template(#fff, 0.775rem, 400, 0.0775rem, 0.03rem);
+        padding: 0.925rem 1.6rem;
+        &:hover {
+          font-size: 0.875rem;
+          border-radius: 1.5rem;
+        }
+      }
+    }
+  }
 }
 
 @include tablet() {
   .container {
-    width: 520px;
+    width: $container-md;
   }
   .first_sub__section {
     .infinity_anim {
@@ -41,13 +85,71 @@
       }
     }
   }
+  .second_sub__section {
+    width: 100%;
+    padding: 1.6rem 2.4rem;
+    .container {
+      h2 {
+        @include main_text_template($main-color, 1.6rem, 400, 1.6rem, 0.03rem);
+        margin-bottom: 0.8rem;
+      }
+      p {
+        @include main_text_template(
+          $main-color,
+          0.825rem,
+          400,
+          0.925rem,
+          0.03rem
+        );
+        margin-bottom: 1.4rem;
+      }
+      a {
+        @include main_text_template(#fff, 0.775rem, 400, 0.875rem, 0.03rem);
+        padding: 0.5rem 1rem;
+        &:hover {
+          font-size: 0.825rem;
+        }
+      }
+    }
+  }
 }
 
 @include mobile() {
   .container {
-    width: 340px;
+    width: $container-sm;
   }
   .first_sub__section {
     display: none;
+  }
+  .second_sub__section {
+    width: 100%;
+    background-color: $liquid-color;
+    padding: 1.6rem 2rem 1.6rem 1.2rem;
+    .container {
+      h2 {
+        @include main_text_template($main-color, 1.2rem, 400, 1.2rem, 0.03rem);
+        margin-bottom: 0.8rem;
+      }
+      p {
+        width: 90%;
+        @include main_text_template(
+          $main-color,
+          0.775rem,
+          400,
+          0.925rem,
+          0.03rem
+        );
+        margin-bottom: 1.4rem;
+      }
+      a {
+        @include main_text_template(#fff, 0.6rem, 400, 0.8rem, 0.03rem);
+        padding: 0.3rem 0.8rem;
+        transition: none;
+        &:hover {
+          font-size: 0.6rem;
+          border-radius: 0;
+        }
+      }
+    }
   }
 }

@@ -1,6 +1,6 @@
 @include desktop() {
   .container {
-    width: 960px;
+    width: $container-xxl;
   }
   .third_section {
     padding-bottom: 11.563rem;
@@ -113,7 +113,7 @@
 
 @include laptop() {
   .container {
-    width: 760px;
+    width: $container-xl;
   }
   .third_section {
     padding-bottom: 11.563rem;
@@ -152,12 +152,13 @@
           margin-bottom: 2rem;
         }
         a {
-          @include main_text_template(#fff, 0.825rem, 700, 1rem, 0.03rem);
+          @include main_text_template(#fff, 0.775rem, 700, 1rem, 0.03rem);
           width: fit-content;
           transform: translateX(160px);
           padding: 0.6rem 2rem;
           &:hover {
-            width: 36%;
+            width: fit-content;
+            font-size: 0.825rem;
           }
         }
       }
@@ -226,7 +227,7 @@
 
 @include tablet() {
   .container {
-    width: 520px;
+    width: $container-md;
   }
   .third_section {
     padding-bottom: 11.563rem;
@@ -271,14 +272,15 @@
           margin-bottom: 0;
         }
         a {
-          @include main_text_template(#fff, 0.825rem, 700, 1rem, 0.03rem);
+          @include main_text_template(#fff, 0.675rem, 700, 1rem, 0.03rem);
           width: fit-content;
-          padding: 0.6rem 2rem;
+          padding: 0.5rem 1.8rem;
           position: absolute;
           left: -460px;
           bottom: -55px;
           &:hover {
-            width: 36%;
+            width: fit-content;
+            font-size: 0.725rem;
           }
         }
       }
@@ -346,7 +348,7 @@
 
 @include mobile() {
   .container {
-    width: 340px;
+    width: $container-sm;
   }
   .third_section {
     padding: 14rem 0 11.563rem;
@@ -396,14 +398,15 @@
           margin-left: 1rem;
         }
         a {
-          @include main_text_template(#fff, 0.625rem, 700, 1rem, 0.03rem);
+          @include main_text_template(#fff, 0.575rem, 700, 1rem, 0.03rem);
           width: fit-content;
           padding: 0.3rem 1.6rem;
           position: absolute;
           left: 20px;
           bottom: -55px;
           &:hover {
-            width: 36%;
+            width: fit-content;
+            font-size: 0.625rem;
           }
         }
       }

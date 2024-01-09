@@ -2,6 +2,7 @@ footer {
   .main_footer {
     padding: 6rem 4rem 1.563rem;
     .main_column {
+      height: fit-content;
       img {
         margin-bottom: 3rem;
       }
@@ -20,6 +21,7 @@ footer {
       }
     }
     .info_column {
+      height: fit-content;
       h3 {
         @include main_text_template(
           $main-color,

@@ -1,0 +1,224 @@
+@include desktop() {
+  .container {
+    width: $container-xxl;
+  }
+  .fourth_section {
+    .gallery {
+      h2 {
+        @include main_text_template($main-color, 3.6rem, 400, 3.6rem, 0.03rem);
+      }
+      .cards {
+        margin-bottom: 2.8rem;
+        padding: 0 2rem;
+        .card {
+          img {
+            margin-bottom: 1.713rem;
+            width: 280px;
+          }
+          a {
+            @include main_text_template(
+              $main-color,
+              1.425rem,
+              700,
+              1.425rem,
+              0.03rem
+            );
+            margin-left: 0.2rem;
+          }
+          .left_anim {
+            &:hover {
+              transform: translateY(-13px) translateX(-13px);
+            }
+          }
+          .center_anim {
+            &:hover {
+              transform: translateY(-7px) translateY(-7px);
+            }
+          }
+          .right_anim {
+            &:hover {
+              transform: translateX(13px) translateY(-13px);
+            }
+          }
+        }
+      }
+      .btn {
+        @include main_text_template(#fff, 0.875rem, 700, 1rem, 0.03rem);
+        margin: 3rem auto;
+        transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover {
+          font-size: 0.975rem;
+          border-radius: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@include laptop() {
+  .container {
+    width: $container-xl;
+  }
+  .fourth_section {
+    margin: 4.538rem auto;
+    .gallery {
+      h2 {
+        @include main_text_template($main-color, 3rem, 400, 3rem, 0.03rem);
+      }
+      .cards {
+        margin-bottom: 2.2rem;
+        padding: 0 1.6rem;
+        .card {
+          img {
+            margin-bottom: 1.713rem;
+            width: 205px;
+          }
+          a {
+            @include main_text_template(
+              $main-color,
+              1.125rem,
+              700,
+              1.125rem,
+              0.03rem
+            );
+          }
+          .left_anim {
+            &:hover {
+              transform: translateY(-13px) translateX(-13px);
+            }
+          }
+          .center_anim {
+            &:hover {
+              transform: translateY(-7px) translateY(-7px);
+            }
+          }
+          .right_anim {
+            &:hover {
+              transform: translateX(13px) translateY(-13px);
+            }
+          }
+        }
+      }
+      .btn {
+        @include main_text_template(#fff, 0.8rem, 700, 0.9rem, 0.03rem);
+        padding: 0.8rem 1.8rem;
+        &:hover {
+          font-size: 0.925rem;
+          border-radius: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@include tablet() {
+  .container {
+    width: $container-md;
+  }
+  .fourth_section {
+    margin: 3.2rem auto;
+    .gallery {
+      h2 {
+        @include main_text_template($main-color, 2.2rem, 400, 2.2rem, 0.03rem);
+      }
+      .cards {
+        flex-direction: column;
+        margin: 1rem auto;
+        padding: 0 1.2rem;
+        .card {
+          margin-bottom: 1.4rem;
+          img {
+            margin-bottom: 0.8rem;
+            width: 200px;
+          }
+          a {
+            @include main_text_template(
+              $main-color,
+              1.125rem,
+              700,
+              1.125rem,
+              0.03rem
+            );
+          }
+          .left_anim {
+            &:hover {
+              transform: translateY(-13px) translateX(-13px);
+            }
+          }
+          .center_anim {
+            &:hover {
+              transform: translateY(-7px) translateY(-7px);
+            }
+          }
+          .right_anim {
+            &:hover {
+              transform: translateX(13px) translateY(-13px);
+            }
+          }
+        }
+      }
+      .btn {
+        @include main_text_template(#fff, 0.8rem, 700, 0.9rem, 0.03rem);
+        padding: 0.8rem 1.8rem;
+        &:hover {
+          font-size: 0.925rem;
+          border-radius: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .container {
+    width: $container-sm;
+  }
+  .fourth_section {
+    margin: 3.2rem auto;
+    .gallery {
+      h2 {
+        @include main_text_template($main-color, 1.5rem, 400, 1.5rem, 0.03rem);
+        margin-bottom: 2rem;
+      }
+      .cards {
+        flex-direction: column;
+        margin: 1rem auto;
+        padding: 0 1.2rem;
+        .card {
+          margin-bottom: 1.4rem;
+          img {
+            width: 190px;
+            margin-bottom: 0.7rem;
+          }
+          a {
+            @include main_text_template($main-color, 1rem, 700, 1rem, 0.03rem);
+          }
+          .left_anim {
+            &:hover {
+              transform: translateY(-13px) translateX(-13px);
+            }
+          }
+          .center_anim {
+            &:hover {
+              transform: translateY(-7px) translateY(-7px);
+            }
+          }
+          .right_anim {
+            &:hover {
+              transform: translateX(13px) translateY(-13px);
+            }
+          }
+        }
+      }
+      .btn {
+        @include main_text_template(#fff, 0.625rem, 700, 0.625rem, 0.03rem);
+        padding: 0.5rem 1rem;
+        margin: 1rem auto;
+        &:hover {
+          font-size: 0.925rem;
+          border-radius: 1.5rem;
+        }
+      }
+    }
+  }
+}

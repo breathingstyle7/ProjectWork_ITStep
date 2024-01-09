@@ -1,0 +1,545 @@
+@include desktop() {
+  .container {
+    width: $container-xxl;
+  }
+  footer {
+    .main_footer {
+      padding: 6rem 4rem 1.563rem;
+      .main_column {
+        height: fit-content;
+        .footer__logo {
+          width: 150px;
+          object-fit: contain;
+          margin-bottom: 3rem;
+        }
+        p {
+          @include main_text_template($main-color, 1.15rem, 400, 1.15rem, 0.03);
+          margin-bottom: 1.2rem;
+        }
+        .social_images {
+          width: 55%;
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+      .info_column {
+        height: fit-content;
+        h3 {
+          @include main_text_template(
+            $main-color,
+            1.15rem,
+            400,
+            1.25rem,
+            0.03rem
+          );
+          margin-bottom: 1rem;
+        }
+        a {
+          @include main_text_template($main-color, 0.8rem, 400, 1rem, 0.03rem);
+          margin-bottom: 0.5rem;
+          &:hover {
+            color: $liquid-color;
+            font-style: italic;
+          }
+        }
+      }
+      .form_column {
+        display: block;
+        margin-bottom: 7.375rem;
+        h2 {
+          @include main_text_template(
+            $main-color,
+            1.825rem,
+            400,
+            1.5rem,
+            0.03rem
+          );
+          margin-bottom: 1rem;
+        }
+        p {
+          @include main_text_template(
+            $main-color,
+            1rem,
+            400,
+            1.325rem,
+            0.03rem
+          );
+          margin-bottom: 1rem;
+        }
+        form {
+          input {
+            width: 75%;
+            background-color: #f6f6f6;
+            padding: 0.55rem 2rem;
+            &:focus {
+              border: none;
+            }
+            &::placeholder {
+              @include main_text_template(
+                rgba(47, 47, 47, 0.36),
+                0.8rem,
+                400,
+                1rem,
+                0.03rem
+              );
+            }
+          }
+          button {
+            @include main_text_template(#fff, 0.8rem, 600, 1rem, 0.03px);
+            width: 20%;
+            padding: 0.8rem;
+            border-radius: 1.25rem;
+            border: none;
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+    .supp_footer {
+      padding: 4rem;
+      a {
+        @include main_text_template($main-color, 0.725rem, 400, 1rem, 0.48rem);
+      }
+      h3 {
+        a {
+          @include main_text_template(
+            $second-color,
+            0.725rem,
+            400,
+            1rem,
+            0.03rem
+          );
+          display: inline;
+          margin: 0 0.1rem;
+          padding: 0;
+          &:hover {
+            color: $liquid-color;
+            font-style: italic;
+          }
+        }
+        @include main_text_template($main-color, 0.725rem, 400, 1rem, 0.03rem);
+      }
+    }
+  }
+}
+
+@include laptop() {
+  .container {
+    width: $container-xl;
+  }
+  footer {
+    .main_footer {
+      padding: 4rem 2.8rem 1.2rem;
+      .main_column {
+        height: fit-content;
+        flex-direction: column;
+        .footer__logo {
+          width: 90px;
+          object-fit: contain;
+          margin-bottom: 2.6rem;
+        }
+        p {
+          @include main_text_template($main-color, 0.925rem, 400, 1rem, 0.03);
+          margin-bottom: 1.2rem;
+        }
+        .social_images {
+          width: 65%;
+          img {
+            width: 16px;
+            object-fit: contain;
+          }
+        }
+      }
+      .info_column {
+        height: fit-content;
+        h3 {
+          @include main_text_template($main-color, 1rem, 400, 1.25rem, 0.03rem);
+          margin-bottom: 1rem;
+        }
+        a {
+          @include main_text_template(
+            $main-color,
+            0.725rem,
+            400,
+            0.625rem,
+            0.03rem
+          );
+          margin-bottom: 0.5rem;
+          &:hover {
+            color: $liquid-color;
+            font-style: italic;
+          }
+        }
+      }
+      .form_column {
+        display: block;
+        margin-bottom: 5rem;
+        h2 {
+          @include main_text_template(
+            $main-color,
+            1.25rem,
+            400,
+            1.2rem,
+            0.03rem
+          );
+          margin-bottom: 1rem;
+        }
+        p {
+          @include main_text_template(
+            $main-color,
+            0.725rem,
+            400,
+            1rem,
+            0.03rem
+          );
+          margin-bottom: 1rem;
+        }
+        form {
+          input {
+            width: 65%;
+            background-color: #f6f6f6;
+            padding: 0.3rem 1.2rem;
+            &:focus {
+              border: none;
+            }
+            &::placeholder {
+              @include main_text_template(
+                rgba(47, 47, 47, 0.36),
+                0.725rem,
+                400,
+                1rem,
+                0.03rem
+              );
+            }
+          }
+          button {
+            @include main_text_template(#fff, 0.725rem, 600, 1rem, 0.03px);
+            width: 30%;
+            padding: 0.8rem;
+            border-radius: 1.25rem;
+            border: none;
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+    .supp_footer {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      a {
+        @include main_text_template($main-color, 0.725rem, 400, 1rem, 0.48rem);
+        margin-bottom: 0.4rem;
+      }
+      h3 {
+        display: block;
+        a {
+          @include main_text_template(
+            $second-color,
+            0.725rem,
+            400,
+            0.6rem,
+            0.03rem
+          );
+          display: inline;
+          margin: 0 0.1rem;
+          padding: 0;
+          &:hover {
+            color: $liquid-color;
+            font-style: italic;
+          }
+        }
+        @include main_text_template(
+          $main-color,
+          0.725rem,
+          400,
+          0.6rem,
+          0.03rem
+        );
+      }
+    }
+  }
+}
+
+@include tablet() {
+  .container {
+    width: $container-md;
+  }
+  footer {
+    .main_footer {
+      padding: 4rem 2.8rem 1.2rem;
+      flex-wrap: wrap;
+      .main_column {
+        flex: 1;
+        height: fit-content;
+        .footer__logo {
+          width: 90px;
+          object-fit: contain;
+          margin-bottom: 2.6rem;
+        }
+        p {
+          @include main_text_template($main-color, 0.925rem, 400, 1rem, 0.03);
+          margin-bottom: 1.2rem;
+        }
+        .social_images {
+          width: 65%;
+          img {
+            width: 16px;
+            object-fit: contain;
+          }
+        }
+      }
+      .info_column {
+        width: 8rem;
+        height: fit-content;
+        h3 {
+          @include main_text_template($main-color, 1rem, 400, 1.25rem, 0.03rem);
+          margin-bottom: 1rem;
+        }
+        a {
+          @include main_text_template(
+            $main-color,
+            0.725rem,
+            400,
+            0.625rem,
+            0.03rem
+          );
+          margin-bottom: 0.5rem;
+          &:hover {
+            color: $liquid-color;
+            font-style: italic;
+          }
+        }
+      }
+      .form_column {
+        display: block;
+        flex: 4;
+        margin-bottom: 5rem;
+        h2 {
+          @include main_text_template(
+            $main-color,
+            1.25rem,
+            400,
+            1.2rem,
+            0.03rem
+          );
+          margin-bottom: 1rem;
+        }
+        p {
+          @include main_text_template(
+            $main-color,
+            0.725rem,
+            400,
+            1rem,
+            0.03rem
+          );
+          margin-bottom: 1rem;
+        }
+        form {
+          input {
+            width: 65%;
+            background-color: #f6f6f6;
+            padding: 0.3rem 1.2rem;
+            &:focus {
+              border: none;
+            }
+            &::placeholder {
+              @include main_text_template(
+                rgba(47, 47, 47, 0.36),
+                0.725rem,
+                400,
+                1rem,
+                0.03rem
+              );
+            }
+          }
+          button {
+            @include main_text_template(#fff, 0.725rem, 600, 1rem, 0.03px);
+            width: 30%;
+            padding: 0.8rem;
+            border-radius: 1.25rem;
+            border: none;
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+    .supp_footer {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      a {
+        @include main_text_template($main-color, 0.725rem, 400, 1rem, 0.48rem);
+        margin-bottom: 0.4rem;
+      }
+      h3 {
+        display: block;
+        a {
+          @include main_text_template(
+            $second-color,
+            0.725rem,
+            400,
+            0.6rem,
+            0.03rem
+          );
+          display: inline;
+          margin: 0 0.1rem;
+          padding: 0;
+          &:hover {
+            color: $liquid-color;
+            font-style: italic;
+          }
+        }
+        @include main_text_template(
+          $main-color,
+          0.725rem,
+          400,
+          0.6rem,
+          0.03rem
+        );
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .container {
+    width: $container-sm;
+  }
+  footer {
+    .main_footer {
+      padding: 2rem 1rem;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      .main_column {
+        .footer__logo {
+          width: 90px;
+          object-fit: contain;
+          margin-bottom: 1rem;
+        }
+        p {
+          @include main_text_template($main-color, 0.925rem, 400, 1rem, 0.03);
+          margin-bottom: 1.2rem;
+        }
+        .social_images {
+          width: 85%;
+          img {
+            width: 14px;
+            object-fit: contain;
+          }
+        }
+      }
+      .info_column {
+        height: fit-content;
+        width: 6rem;
+        h3 {
+          @include main_text_template(
+            $main-color,
+            0.925rem,
+            400,
+            1rem,
+            0.03rem
+          );
+          margin-bottom: 1rem;
+        }
+        a {
+          @include main_text_template(
+            $main-color,
+            0.775rem,
+            400,
+            0.625rem,
+            0.03rem
+          );
+          margin-bottom: 0.5rem;
+          &:hover {
+            color: $liquid-color;
+            font-style: italic;
+          }
+        }
+      }
+      .form_column {
+        width: 6rem;
+        display: block;
+        margin-bottom: 5rem;
+        h2 {
+          @include main_text_template($main-color, 1rem, 400, 1rem, 0.03rem);
+          margin-bottom: 1rem;
+        }
+        p {
+          @include main_text_template(
+            $main-color,
+            0.725rem,
+            400,
+            1rem,
+            0.03rem
+          );
+          margin-bottom: 1rem;
+        }
+        form {
+          input {
+            width: 65%;
+            background-color: #f6f6f6;
+            padding: 0.3rem 1.2rem;
+            &:focus {
+              border: none;
+            }
+            &::placeholder {
+              @include main_text_template(
+                rgba(47, 47, 47, 0.36),
+                0.725rem,
+                400,
+                1rem,
+                0.03rem
+              );
+            }
+          }
+          button {
+            @include main_text_template(#fff, 0.725rem, 600, 1rem, 0.03px);
+            width: 30%;
+            padding: 0.8rem;
+            border-radius: 1.25rem;
+            border: none;
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+    .supp_footer {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column-reverse;
+      a {
+        @include main_text_template($main-color, 0.625rem, 400, 1rem, 0.48rem);
+        margin-bottom: 0;
+      }
+      h3 {
+        display: block;
+        margin-bottom: 0.8rem;
+        a {
+          @include main_text_template(
+            $second-color,
+            0.625rem,
+            400,
+            0.6rem,
+            0.03rem
+          );
+          display: inline;
+          margin: 0 0.1rem;
+          padding: 0;
+          &:hover {
+            color: $liquid-color;
+            font-style: italic;
+          }
+        }
+        @include main_text_template(
+          $main-color,
+          0.625rem,
+          400,
+          0.6rem,
+          0.03rem
+        );
+      }
+    }
+  }
+}
