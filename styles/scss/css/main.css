@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -79,46 +81,6 @@ a {
   border-radius: 1.25rem;
   padding: 0.938rem;
   color: #fff;
-}
-.header .humburger .menu {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: none;
-  padding: 0;
-}
-.header .humburger .line {
-  fill: none;
-  stroke: black;
-  stroke-width: 3;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header .humburger .line1 {
-  stroke-dasharray: 60 207;
-  stroke-width: 3;
-}
-.header .humburger .line2 {
-  stroke-dasharray: 60 60;
-  stroke-width: 3;
-}
-.header .humburger .line3 {
-  stroke-dasharray: 60 207;
-  stroke-width: 3;
-}
-.header .humburger .opened .line1 {
-  stroke-dasharray: 90 207;
-  stroke-dashoffset: -134;
-  stroke-width: 3;
-}
-.header .humburger .opened .line2 {
-  stroke-dasharray: 1 60;
-  stroke-dashoffset: -30;
-  stroke-width: 3;
-}
-.header .humburger .opened .line3 {
-  stroke-dasharray: 90 207;
-  stroke-dashoffset: -134;
-  stroke-width: 3;
 }
 
 .hero_offer {
@@ -537,7 +499,7 @@ a {
   background-color: #ff7f96;
   border-radius: 1.875rem;
 }
-.last_section a {
+.last_section .container .gallery_link {
   color: #fff;
   font-size: 0.875rem;
   font-weight: 700;
@@ -551,37 +513,9 @@ a {
   border-radius: 0.3rem;
   transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.last_section a:hover {
+.last_section .container .gallery_link:hover {
   font-size: 0.975rem;
   border-radius: 1.5rem;
-}
-.last_section table {
-  width: 1070px;
-  margin: 0 auto;
-}
-.last_section table caption {
-  color: #2f2f2f;
-  font-size: 4rem;
-  font-weight: 400;
-  line-height: 4rem;
-  letter-spacing: 0.03rem;
-  text-align: left;
-  margin-bottom: 3.125rem;
-}
-.last_section table tr td {
-  color: #2f2f2f;
-  font-size: 1.375rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  letter-spacing: 0.03rem;
-  padding: 1.625rem;
-}
-.last_section table tr td img {
-  transform: none;
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.last_section table tr td img:hover {
-  transform: rotateX(-180deg);
 }
 
 .first_sub__section {
@@ -644,6 +578,117 @@ a {
 .second_sub__section .container a:hover {
   font-size: 1.15rem;
   border-radius: 1.5rem;
+}
+
+.accordion h3 {
+  font-weight: 400;
+  font-size: 4rem;
+  color: #2f2f2f;
+  text-align: left;
+}
+.accordion a {
+  position: relative;
+  display: inline;
+  color: #ff7f96;
+  transition: text-decoration 0.6s;
+}
+.accordion a::after {
+  content: "";
+  position: absolute;
+  background-color: #82cbac;
+  height: 2.5px;
+  left: 0;
+  width: 0;
+  bottom: -1.63px;
+  transition: 0.3s;
+}
+.accordion a:hover::after {
+  width: 100%;
+}
+
+.accordionMenu {
+  width: auto;
+  margin: 0 auto;
+}
+.accordionMenu input[type=checkbox] {
+  display: none;
+}
+.accordionMenu label {
+  cursor: pointer;
+}
+.accordionMenu label p {
+  color: #2f2f2f;
+  padding: 2rem 1.6rem;
+  font-size: 22px;
+  display: block;
+}
+.accordionMenu label img {
+  display: block;
+  width: 1.6rem;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+}
+.accordionMenu .content {
+  max-height: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 2s ease-in-out;
+}
+.accordionMenu .content .inner {
+  width: 90%;
+  margin-left: 3rem;
+}
+.accordionMenu .content .inner h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.accordionMenu .content .inner .inner-list-content {
+  width: 100%;
+}
+.accordionMenu .content .inner .inner-list-content ol {
+  margin: 2rem 3rem;
+}
+.accordionMenu .content .inner .inner-list-content ol li {
+  list-style: decimal;
+  font-size: 1.15rem;
+  transition: margin 0.6s;
+}
+.accordionMenu .content .inner .inner-list-content ol:hover li {
+  margin: 0.3rem 0;
+}
+.accordionMenu .content .inner .inner-list-content .list-gallery {
+  width: 45%;
+  margin-right: 10%;
+  transition: width 0.7s;
+}
+.accordionMenu .content .inner .inner-list-content .list-gallery img {
+  width: 120px;
+  object-fit: contain;
+  transition: width 0.7s;
+}
+.accordionMenu .content .inner .inner-list-content .list-gallery:hover {
+  width: 37%;
+}
+.accordionMenu .content .inner .inner-list-content .list-gallery:hover img {
+  width: 105px;
+}
+.accordionMenu .content .inner p {
+  width: auto;
+  font-size: 1.2rem;
+  color: #2c97de;
+  padding: 20px 10px;
+}
+.accordionMenu input[type=checkbox]:checked + label img {
+  transform: rotate(180deg);
+}
+.accordionMenu input[type=checkbox]:checked + label + .content {
+  max-height: 2000px;
+  height: auto;
+}
+.accordionMenu input[type=checkbox]:not(:checked) + label + .content {
+  max-height: 0;
+  height: auto;
+  transition: all 0.6s;
 }
 
 footer .main_footer {
