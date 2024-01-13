@@ -14,11 +14,3 @@ $(document).ready(function () {
         }
     );
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    const image = document.getElementById('flip-image');
-  
-    image.addEventListener('click', function () {
-      this.classList.toggle('active');
-    });
-  });

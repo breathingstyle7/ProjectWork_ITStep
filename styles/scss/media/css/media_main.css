@@ -1593,7 +1593,7 @@
     padding: 0.625rem 0.8rem;
     border-radius: 1.875rem;
   }
-  .last_section a {
+  .last_section .container .gallery_link {
     color: #fff;
     font-size: 0.875rem;
     font-weight: 700;
@@ -1603,42 +1603,65 @@
     padding: 1rem 2rem;
     border-radius: 0.3rem;
   }
-  .last_section a:hover {
+  .last_section .container .gallery_link:hover {
     font-size: 0.975rem;
     border-radius: 1.5rem;
   }
-  .last_section table {
-    width: 860px;
+  .last_section .accordion {
+    padding: 1rem 2rem;
+  }
+  .last_section .accordion a::after {
+    height: 2.5px;
+    bottom: -1.63px;
+  }
+  .last_section .accordionMenu {
+    width: auto;
     margin: 0 auto;
   }
-  .last_section table caption {
-    color: #2f2f2f;
-    font-size: 3.6rem;
-    font-weight: 400;
-    line-height: 3.6rem;
-    letter-spacing: 0.03rem;
-    text-align: left;
-    margin-bottom: 3rem;
+  .last_section .accordionMenu label p {
+    font-size: 1.3rem;
   }
-  .last_section table tr td {
-    color: #2f2f2f;
-    font-size: 1.175rem;
-    font-weight: 400;
-    line-height: 1.5rem;
-    letter-spacing: 0.03rem;
-    padding: 1.625rem;
+  .last_section .accordionMenu .content {
+    max-height: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
   }
-  .last_section table tr td img {
-    transform: none;
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  .last_section .accordionMenu .content .inner {
+    width: 90%;
+    margin-left: 3rem;
   }
-  .last_section table tr td img:hover {
-    transform: rotateX(-180deg);
+  .last_section .accordionMenu .content .inner h3 {
+    font-size: 1.2rem;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content ol li {
+    font-size: 1.1rem;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content ol:hover li {
+    margin: 0.3rem 0;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content .list-gallery {
+    transition: width 0.7s;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content .list-gallery img {
+    width: 100px;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content .list-gallery:hover {
+    width: 35%;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content .list-gallery:hover img {
+    width: 90px;
+  }
+  .last_section .accordionMenu .content .inner p {
+    width: auto;
+    font-size: 1.1rem;
+    color: #2c97de;
+    padding: 20px 10px;
   }
 }
 @media screen and (max-width: 992px) {
   .container {
-    width: 7 720px;
+    width: 720px;
   }
   .last_section {
     margin: 6rem auto;
@@ -1687,7 +1710,7 @@
     padding: 0.5rem 0.675rem;
     border-radius: 1.875rem;
   }
-  .last_section a {
+  .last_section .container .gallery_link {
     color: #fff;
     font-size: 0.775rem;
     font-weight: 700;
@@ -1697,38 +1720,60 @@
     padding: 0.725rem 1.725rem;
     border-radius: 0.3rem;
   }
-  .last_section a:hover {
+  .last_section .container .gallery_link:hover {
     font-size: 0.875rem;
     border-radius: 1.5rem;
   }
-  .last_section table {
-    width: 700px;
+  .last_section .accordion {
+    padding: 1rem 2rem;
+  }
+  .last_section .accordion h3 {
+    font-size: 2.8rem;
+  }
+  .last_section .accordion a::after {
+    height: 2.5px;
+    bottom: -1.63px;
+  }
+  .last_section .accordionMenu {
+    width: auto;
     margin: 0 auto;
   }
-  .last_section table caption {
-    color: #2f2f2f;
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 3rem;
-    letter-spacing: 0.03rem;
-    margin-bottom: 2rem;
+  .last_section .accordionMenu label p {
+    font-size: 1.125rem;
   }
-  .last_section table tr td {
-    color: #2f2f2f;
-    font-size: 0.975rem;
-    font-weight: 400;
-    line-height: 1rem;
-    letter-spacing: 0.03rem;
-    padding: 1.2rem;
+  .last_section .accordionMenu label img {
+    width: 1.4rem;
   }
-  .last_section table tr td img {
-    width: 24px;
-    object-fit: contain;
-    transform: none;
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  .last_section .accordionMenu .content .inner {
+    width: 90%;
+    margin-left: 2.6rem;
   }
-  .last_section table tr td img:hover {
-    transform: rotateX(-180deg);
+  .last_section .accordionMenu .content .inner h3 {
+    font-size: 1.2rem;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content ol li {
+    font-size: 1rem;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content ol:hover li {
+    margin: 0.3rem 0;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content .list-gallery {
+    transition: width 0.7s;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content .list-gallery img {
+    width: 85px;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content .list-gallery:hover {
+    width: 37%;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content .list-gallery:hover img {
+    width: 70px;
+  }
+  .last_section .accordionMenu .content .inner p {
+    width: auto;
+    font-size: 0.925rem;
+    color: #2c97de;
+    padding: 20px 10px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1796,7 +1841,7 @@
     width: 10px;
     object-fit: contain;
   }
-  .last_section a {
+  .last_section .container .gallery_link {
     color: #fff;
     font-size: 0.7rem;
     font-weight: 700;
@@ -1806,38 +1851,77 @@
     padding: 0.625rem 1.5rem;
     border-radius: 0.3rem;
   }
-  .last_section a:hover {
+  .last_section .container .gallery_link:hover {
     font-size: 0.775rem;
     border-radius: 1.5rem;
   }
-  .last_section table {
-    width: 470px;
-    margin: 0 auto;
+  .last_section .accordion h3 {
+    font-size: 2rem;
   }
-  .last_section table caption {
+  .last_section .accordionMenu label p {
     color: #2f2f2f;
-    font-size: 2.2rem;
-    font-weight: 400;
-    line-height: 2.2rem;
-    letter-spacing: 0.03rem;
-    margin-bottom: 1rem;
+    padding: 1.6rem;
+    font-size: 1.1rem;
+    display: block;
   }
-  .last_section table tr td {
-    color: #2f2f2f;
-    font-size: 0.825rem;
-    font-weight: 400;
-    line-height: 1em;
-    letter-spacing: 0.03rem;
-    padding: 1.2rem;
-  }
-  .last_section table tr td img {
-    width: 18px;
+  .last_section .accordionMenu label img {
+    display: block;
+    width: 1.2rem;
     object-fit: contain;
-    transform: none;
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.3s ease-in-out;
   }
-  .last_section table tr td img:hover {
-    transform: rotateX(-180deg);
+  .last_section .accordionMenu .content {
+    max-height: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+  }
+  .last_section .accordionMenu .content .inner {
+    width: 90%;
+    margin-left: 2.2rem;
+  }
+  .last_section .accordionMenu .content .inner h3 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content {
+    width: 100%;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content ol {
+    margin: 1rem 1.6rem;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content ol li {
+    font-size: 0.925rem;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content ol:hover li {
+    margin: 0.3rem 0;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content .list-gallery {
+    width: 25%;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content .list-gallery .card_2 {
+    display: none;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content .list-gallery .card_3 {
+    display: none;
+  }
+  .last_section .accordionMenu .content .inner p {
+    width: auto;
+    font-size: 0.925rem;
+    color: #2c97de;
+    padding: 10px;
+  }
+  .last_section .accordionMenu input[type=checkbox]:checked + label img {
+    transform: rotate(180deg);
+  }
+  .last_section .accordionMenu input[type=checkbox]:checked + label + .content {
+    max-height: 2000px;
+    height: auto;
+  }
+  .last_section .accordionMenu input[type=checkbox]:not(:checked) + label + .content {
+    max-height: 0;
+    height: auto;
+    transition: all 0.6s;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1911,7 +1995,7 @@
     width: 10px;
     object-fit: contain;
   }
-  .last_section a {
+  .last_section .container .gallery_link {
     color: #fff;
     font-size: 0.625rem;
     font-weight: 700;
@@ -1921,32 +2005,46 @@
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
   }
-  .last_section a:hover {
+  .last_section .container .gallery_link:hover {
     font-size: 0.775rem;
     border-radius: 1.5rem;
   }
-  .last_section table {
-    width: 300px;
-    margin: 0 auto;
+  .last_section .accordion h3 {
+    font-size: 1.8rem;
   }
-  .last_section table caption {
-    color: #2f2f2f;
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.4rem;
-    letter-spacing: 0.03rem;
-    margin-bottom: 0.8rem;
+  .last_section .accordionMenu label p {
+    padding: 1.6rem;
+    font-size: 1rem;
   }
-  .last_section table tr td {
-    color: #2f2f2f;
-    font-size: 0.725rem;
-    font-weight: 400;
-    line-height: 1em;
-    letter-spacing: 0.03rem;
-    padding: 1.2rem;
+  .last_section .accordionMenu label img {
+    display: block;
+    width: 1rem;
   }
-  .last_section table tr td img {
-    width: 16px;
+  .last_section .accordionMenu .content .inner {
+    width: 100%;
+    margin-left: 2.2rem;
+  }
+  .last_section .accordionMenu .content .inner h3 {
+    font-size: 0.975rem;
+    font-weight: 500;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content {
+    width: 100%;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content ol {
+    margin: 1rem 1.6rem;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content ol li {
+    font-size: 0.925rem;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content ol:hover li {
+    margin: 0.3rem 0;
+  }
+  .last_section .accordionMenu .content .inner .inner-list-content .list-gallery {
+    display: none;
+  }
+  .last_section .accordionMenu .content .inner p {
+    font-size: 0.875rem;
   }
 }
 @media screen and (max-width: 1200px) {
