@@ -56,12 +56,23 @@ a {
   margin-right: 23.5rem;
 }
 .header .navbar ul li a {
+  position: relative;
+  display: inline;
   color: #2f2f2f;
-  font-style: normal;
+  transition: text-decoration 0.6s;
 }
-.header .navbar ul li a:hover {
-  color: #82cbac;
-  font-style: italic;
+.header .navbar ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: #82cbac;
+  height: 2.5px;
+  left: 0;
+  width: 0;
+  bottom: -1.63px;
+  transition: 0.3s;
+}
+.header .navbar ul li a:hover::after {
+  width: 100%;
 }
 .header .header_social {
   width: 5.25rem;

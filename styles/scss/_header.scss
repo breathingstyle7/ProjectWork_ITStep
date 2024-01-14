@@ -9,12 +9,27 @@
   .navbar {
     width: 16.063rem;
     margin-right: 23.5rem;
-    ul li a {
-      color: $main-color;
-      font-style: normal;
-      &:hover {
-        color: $liquid-color;
-        font-style: italic;
+    ul {
+      li {
+        a {
+          position: relative;
+          display: inline;
+          color: $main-color;
+          transition: text-decoration 0.6s;
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: $liquid-color;
+            height: 2.5px;
+            left: 0;
+            width: 0;
+            bottom: -1.63px;
+            transition: 0.3s;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+        }
       }
     }
   }
